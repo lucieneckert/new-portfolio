@@ -12,6 +12,7 @@ $projects = exec_query($db, $projects_query)->fetchAll();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/styles/site.css">
+    <link rel="shortcut icon" href="public/favicon.ico">
     <title>Projects</title>
 </head>
 
