@@ -10,6 +10,10 @@ if (preg_match('/^\/public\//', $request)) {
 switch ($request) {
     case '/':
         require 'pages/index.php';
+        break;
+    case '/projects':
+        require 'pages/projects.php';
+        break;
     default:
         http_response_code(404);
 }

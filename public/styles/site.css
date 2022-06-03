@@ -162,3 +162,125 @@ min-width: 600px;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
+
+/* Project grid stuff */
+.spacious-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.projects-list li {
+    list-style: none;
+    margin: 10px;
+    margin-left: -40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: lightgray;
+  }
+  
+  .projects-list li:hover {
+    background-color: darkgrey;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .projects-list li:hover .in-progress {
+    background-color: white;
+    color: #222222;
+  }
+  
+  .projects-list li .in-progress {
+    display: inline-block;
+    padding: 2.5px 10px;
+    background-color: #222222;
+    color: white;
+    margin-left: 20px;
+  }
+  
+  .projects-list li .tools-list {
+    display: absolute;
+  }
+  
+  .projects-list li .tools-list li {
+    float: right;
+    display: inline-block;
+    background-color: #2b2b2b;
+    color: white;
+    padding: 2px 4px;
+    font-size: 0.75em;
+    margin: 2px;
+    margin-top: -20px;
+    border-radius: 0px;
+  }
+
+  
+.tools-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .tools-list li {
+    display: inline-block;
+    background-color: #2b2b2b;
+    color: white;
+    padding: 2px 4px;
+    font-size: 0.75em;
+    margin: 2px;
+  }
+  
+  .project-card {
+    border-radius: 20px;
+    padding: 30px 40px;
+    background-color: #ebebeb;
+    margin: 10px;
+    color: #2b2b2b;
+    width: 400px;
+    max-width: 200px;
+    height: 300px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: left;
+    -webkit-filter: drop-shadow(0px 10px 4px #CCCCCC);
+            filter: drop-shadow(0px 10px 4px #CCCCCC);
+    overflow: hidden;
+    border: 1px solid lightgrey;
+  }
+  
+  .project-card h3 {
+    margin-bottom: 0px;
+  }
+  
+  .project-card h4 {
+    margin-top: 0px;
+    font-weight: lighter;
+    font-size: 0.8em;
+  }
+  
+  @media (max-width: 700px) {
+    .project-card {
+      max-width: 80%;
+      width: 70%;
+      height: 350px;
+    }
+  }
+  
+  .project-card .in-progress {
+    position: absolute;
+    display: inline-block;
+    padding: 10px;
+    margin-left: -40px;
+    margin-top: -30px;
+    width: 30%;
+    background-color: black;
+    color: white;
+  }
+  
+  .project-card:hover {
+    background-color: white;
+    animation: hover-up 0.25s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  }
