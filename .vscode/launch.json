@@ -14,7 +14,7 @@
         "router.php"
       ],
       "cwd": "${workspaceRoot}",
-      "port": 8080,
+      "port": 9003,
       "serverReadyAction": {
         "pattern": "Development Server \\(http://localhost:([0-9]+)\\) started",
         "uriFormat": "http://localhost:%s",

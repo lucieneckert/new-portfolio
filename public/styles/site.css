@@ -97,6 +97,7 @@ min-width: 600px;
     width: 1.25em;
     margin: 0px 5px;
     margin-top: 2px;
+    filter: brightness(0%);
 }
 
 /* "cards" i guess */
@@ -198,6 +199,15 @@ min-width: 600px;
     color: white;
     margin-left: 20px;
   }
+
+  .project-card-banner {
+    width: 140%;
+    margin-left: -20%;
+    margin-top: -15%;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }  
   
   .projects-list li .tools-list {
     display: absolute;

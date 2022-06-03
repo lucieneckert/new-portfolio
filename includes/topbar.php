@@ -74,12 +74,12 @@
     <script>
         let canEscape = true;
         const escapePositions = [
-            "0px, 0px",
             "-50px, 30px",
             "30px, 0px",
             "-10px, 30px",
             "50px, 10px",
-            "-80px, 0px"
+            "-80px, 0px",
+            "0px, 0px",
         ]
         const escapeLabels = [
             "Oop",
