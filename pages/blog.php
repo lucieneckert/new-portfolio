@@ -16,25 +16,18 @@
     </header>
     <section class='main'>
 
-    <h1>Blog</h1>
-    <h2>Under Construction...</h2>
-    <p>In the mean time, here are some pictures of my cats.</p>
-    <h3><em>That's a little trick called subversion</em> (In flaming serif text)</h3>
+        <h1>Blog <span style="font-size: 0.2em;">is under construction</span></h1>
+        <p>In the mean time, here are some pictures of my cats. 
+            <em>
+                <span style="font-weight: bolder; font-size: 1.75em; background-color: pink; color: red; font-family: serif">
+                    THAT'S A LITTLE TRICK CALLED SUBVERSION
+                </span>
+            </em>
+        </p>
+        <!-- fire gif from https://giphy.com/stickers/actionvfx-fire-flames-burning-poles-gJijhzjTV2pCn2SePc -->
+        <img src="public/images/misc/fire.gif" alt="trail of flames" class='above-line-bg-gif'>
 
-    <div class='cat-gallery'>
-        <img src="public/images/cat-photos/0.jpg" alt="cat photo"/>
-        <img src="public/images/cat-photos/1.jpg" alt="cat photo"/>
-        <img src="public/images/cat-photos/2.jpg" alt="cat photo"/>
-        <img src="public/images/cat-photos/3.jpg" alt="cat photo"/>
-        <img src="public/images/cat-photos/4.jpg" alt="cat photo"/>
-        <img src="public/images/cat-photos/5.jpg" alt="cat photo"/>
-        <img src="public/images/cat-photos/6.jpg" alt="cat photo"/>
-        <img src="public/images/cat-photos/7.jpg" alt="cat photo"/>
-        <img src="public/images/cat-photos/8.jpg" alt="cat photo"/>
-        <img src="public/images/cat-photos/9.jpg" alt="cat photo"/>
-        <img src="public/images/cat-photos/10.jpg" alt="cat photo"/>
-        <img src="public/images/cat-photos/11.jpg" alt="cat photo"/>
-    </div>
+        <?php include('includes/cat-gallery.php') ?>
 
     </section>
 </body>
