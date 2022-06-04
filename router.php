@@ -19,6 +19,9 @@ switch ($request) {
     case '/projects':
         require 'pages/projects.php';
         break;
+    case '/blog':
+        require 'pages/blog.php';
+        break;
     default:
         http_response_code(404);
 }

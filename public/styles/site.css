@@ -28,6 +28,19 @@ span.version-subtitle {
     color: lightslategrey;
 }
 
+/* cat gallery */
+
+.cat-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cat-gallery img {
+    max-width: 33%;
+    object-fit: cover;
+    flex-grow: 1fr;
+}
+
 /* nav */
 
 #logo-img {
