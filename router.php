@@ -7,9 +7,14 @@ if (preg_match('/^\/public\//', $request)) {
     return False;
 }
 
+$request = explode('?', $request)[0];
+
 switch ($request) {
     case '/':
         require 'pages/index.php';
+        break;
+    case '/view':
+        require 'pages/view.php';
         break;
     case '/projects':
         require 'pages/projects.php';

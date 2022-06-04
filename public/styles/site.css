@@ -10,7 +10,8 @@ html {
 body {
     max-width: 1200px;
     padding: 10px 20px;
-    margin: 10px auto;
+    margin: 20px auto;
+    margin-bottom: 40px;
     background-color: white;
     filter: drop-shadow(10px 10px 0px grey);
 
@@ -171,60 +172,15 @@ min-width: 600px;
     justify-content: center;
 }
 
-
-.projects-list li {
-    list-style: none;
-    margin: 10px;
-    margin-left: -40px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: lightgray;
-  }
-  
-  .projects-list li:hover {
-    background-color: darkgrey;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .projects-list li:hover .in-progress {
-    background-color: white;
-    color: #222222;
-  }
-  
-  .projects-list li .in-progress {
-    display: inline-block;
-    padding: 2.5px 10px;
-    background-color: #222222;
-    color: white;
-    margin-left: 20px;
-  }
-
   .project-card-banner {
     width: 140%;
     margin-left: -20%;
     margin-top: -15%;
+    object-fit: cover;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
   }  
-  
-  .projects-list li .tools-list {
-    display: absolute;
-  }
-  
-  .projects-list li .tools-list li {
-    float: right;
-    display: inline-block;
-    background-color: #2b2b2b;
-    color: white;
-    padding: 2px 4px;
-    font-size: 0.75em;
-    margin: 2px;
-    margin-top: -20px;
-    border-radius: 0px;
-  }
-
   
 .tools-list {
     list-style-type: none;
@@ -246,17 +202,15 @@ min-width: 600px;
     background-color: #ebebeb;
     margin: 10px;
     color: #2b2b2b;
-    width: 400px;
-    max-width: 200px;
-    height: 300px;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    height: 200px;
     text-align: left;
-    -webkit-filter: drop-shadow(0px 10px 4px #CCCCCC);
-            filter: drop-shadow(0px 10px 4px #CCCCCC);
+    filter: drop-shadow(0px 10px 4px #CCCCCC);
     overflow: hidden;
     border: 1px solid lightgrey;
+  }
+
+  .spacious-flex a {
+    width: 25%;
   }
   
   .project-card h3 {

@@ -27,6 +27,8 @@
                     concentration on Interactive Technology and a minor in Game Design. Welcome to my portfolio!
                 </p>
                 <?php include('includes/index-gallery.php') ?>
+                <p>Prepare your eyeballs...</p>
+                <p>... and get on your hiring clothes.</p>
                 <a href="/projects">
                     <div class='projects-button'>
                         <span>🡆 Okay, show me some projects already</span>

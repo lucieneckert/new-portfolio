@@ -28,7 +28,7 @@ $projects = exec_query($db, $projects_query)->fetchAll();
                 <div class='spacious-flex'>
                     <?php foreach ($projects as $project) {
                         ?>
-                        <a href="<?php echo $project['page_url'] ?>">
+                        <a href="view?project=<?php echo $project['page_url'] ?>">
                             <div class='project-card'>
                                 <img class='project-card-banner' src="public/images/project-thumbs/<?php echo $project['thumbnail_path'] ?>" alt=""/>
                                 <h3><?php echo $project['name'] ?></h3>
