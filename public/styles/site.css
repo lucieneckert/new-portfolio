@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Raleway:ital,wght@1,800&display=swap');
 
 html {
-    background: black url('/public/images/circle-scatter-haikei.svg') no-repeat center center fixed;
+    background: #001220 url('/public/images/circle-scatter-haikei.svg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Atkinson Hyperlegible', sans-serif;
 }
@@ -196,6 +196,7 @@ min-width: 600px;
 
   .project-card-banner {
     width: 140%;
+    height: 150px;
     margin-left: -20%;
     margin-top: -15%;
     object-fit: cover;

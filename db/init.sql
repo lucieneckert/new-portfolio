@@ -1,4 +1,3 @@
-
 CREATE TABLE projects (
     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
     name TEXT NOT NULL UNIQUE,
@@ -61,14 +60,14 @@ VALUES
     ('A Small Game About Juiceboxes', 'juiceboxes.png', 'jb'),
     ('Parole in One', 'golf.png', 'pio')
 ;
-INSERT INTO project_categories (project_id, category_id) VALUES (0, 0), (1, 0), (2, 0), (3, 0), (4, 0);
+INSERT INTO project_categories (project_id, category_id) VALUES (1, 1), (2, 1), (3, 1), (4, 1), (5, 1);
 INSERT INTO project_tools (project_id, tool_id)
 VALUES
-    (0, 2), (0, 7), (0, 8),
-    (1, 1), (1, 3), (1, 4),
-    (2, 1), (2, 3), (2, 4),
-    (3, 1), (3, 3), (3, 4),
-    (4, 0), (4, 1), (4, 2)
+    (1, 3), (1, 8), (1, 9),
+    (2, 2), (2, 4), (2, 5),
+    (3, 2), (3, 4), (3, 5),
+    (4, 2), (4, 4), (4, 5),
+    (5, 1), (5, 2), (5, 3)
 ;
 -- coding projects
 INSERT INTO projects (name, thumbnail_path, page_url)
@@ -77,30 +76,30 @@ VALUES
     ('CamlClimbers: Tetris variant in OCaml', 'camls.png', 'caml-climbers'),
     ('Random Mystery Dungeon Generator', 'dungeons.png', 'random-md')
 ;
-INSERT INTO project_categories (project_id, category_id) VALUES (5, 1), (6, 1), (7, 1);
+INSERT INTO project_categories (project_id, category_id) VALUES (6, 2), (7, 2), (8, 2);
 INSERT INTO project_tools (project_id, tool_id)
 VALUES
-    (5, 9), (5, 10), (5, 12),
-    (6, 11),
-    (7, 9)
+    (6, 10), (6, 11), (6, 13),
+    (7, 12),
+    (8, 10)
 ;
 -- web dev
 INSERT INTO projects (name, thumbnail_path, page_url)
 VALUES 
     ('Misc. Web Dev Projects', 'webdev.png', 'webdev')
 ;
-INSERT INTO project_categories (project_id, category_id) VALUES (8, 2);
--- music
-INSERT INTO projects (name, thumbnail_path, page_url)
-VALUES 
-    ('Ragdoll Royale OST', 'rr-ost.png', 'rr-ost'),
-    ('A Small Game About Juiceboxes OST', 'jb-ost', 'jb-ost'),
-    ('Parole in One OST', 'pio-ost.png', 'pio-ost')
-;
-INSERT INTO project_categories (project_id, category_id) VALUES (9, 3), (10, 3), (11, 3);
-INSERT INTO project_tools (project_id, tool_id)
-VALUES
-    (9, 7), (10, 1), (11, 1)
-;
+INSERT INTO project_categories (project_id, category_id) VALUES (9, 3);
+-- -- music
+-- INSERT INTO projects (name, thumbnail_path, page_url)
+-- VALUES 
+--     ('Ragdoll Royale OST', 'rr-ost.png', 'rr-ost'),
+--     ('A Small Game About Juiceboxes OST', 'jb-ost', 'jb-ost'),
+--     ('Parole in One OST', 'pio-ost.png', 'pio-ost')
+-- ;
+-- INSERT INTO project_categories (project_id, category_id) VALUES (9, 3), (10, 3), (11, 3);
+-- INSERT INTO project_tools (project_id, tool_id)
+-- VALUES
+--     (9, 7), (10, 1), (11, 1)
+-- ;
 
 

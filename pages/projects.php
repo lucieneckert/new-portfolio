@@ -2,7 +2,8 @@
 
 $projects_query = "SELECT * FROM projects";
 $projects = exec_query($db, $projects_query)->fetchAll();
-
+$tools_query = "SELECT tools.name AS 'tools.name', projects.id AS 'projects.id' FROM project_tools INNER JOIN tools ON tools.id = project_tools.tool_id INNER JOIN projects ON projects.id = project_tools.project_id";
+$tools = exec_query($db, $tools_query)->fetchAll();
 ?>
 
 <html lang="en" class="projects-page-bg">
@@ -32,9 +33,13 @@ $projects = exec_query($db, $projects_query)->fetchAll();
                             <div class='project-card'>
                                 <img class='project-card-banner' src="public/images/project-thumbs/<?php echo $project['thumbnail_path'] ?>" alt=""/>
                                 <h3><?php echo $project['name'] ?></h3>
-                                <h4>Team-Based Game Design + Dev</h4>
                                 <ul class='tools-list'>
                                     <?php
+                                    foreach ($tools as $tool) {
+                                        if ($tool['projects.id'] == $project['id']) {
+                                            ?> <li> <?php echo $tool['tools.name'] ?> </li> <?php
+                                        } 
+                                    }
                                     ?>
                                 </ul>
                             </div>

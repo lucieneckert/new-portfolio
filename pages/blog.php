@@ -26,7 +26,7 @@
         </p>
         <!-- fire gif from https://giphy.com/stickers/actionvfx-fire-flames-burning-poles-gJijhzjTV2pCn2SePc -->
         <img src="public/images/misc/fire.gif" alt="trail of flames" class='above-line-bg-gif'>
-
+  
         <?php include('includes/cat-gallery.php') ?>
 
     </section>
