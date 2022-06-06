@@ -1,4 +1,4 @@
-<h1>A Small Game About Juiceboxes</h1>
+<h2 class='project-title'>A Small Game About Juiceboxes</h2>
 <section class='project-info-summary'>
     <p>September 2020</p>
     <ul class='tools-list'>
@@ -23,16 +23,16 @@
     increase in frequency, intensity, and speed -- and new, tougher patterns are added to the mix.
 </p>
 
-<img src="../res/project-info-res/jb/diagram.png" alt="">
+<img src="public/project-info-res/jb/diagram.png" alt="" class='project-img'>
 
 <div class='project-info-gallery'>
-    <figure><img src="../res/project-info-res/jb/mp-riskreward.png" alt="">
+    <figure><img src="public/project-info-res/jb/mp-riskreward.png" alt="">
         <figcaption>Certain stages make certain obstacles more or less difficult.
             Often, due to their spawn locations, the reward of getting a power-up comes at the cost of the player
             putting themselves in an extremely risky spot.
         </figcaption>
     </figure>
-    <figure><img src="../res/project-info-res/jb/jumping.gif" alt="">
+    <figure><img src="public/project-info-res/jb/jumping.gif" alt="">
         <figcaption>Early version of the game's movement. Triggering visual effects
             on jumping/landing made what's essentially a flat square zooming around
             feel like it had weight behind it.</figcaption>
@@ -56,11 +56,11 @@
 </p>
 
 <div class='project-info-gallery'>
-    <figure><img src="../res/project-info-res/jb/mp-menu.png" alt="">
+    <figure><img src="public/project-info-res/jb/mp-menu.png" alt="">
         <figcaption>The menu design lets players easily hop in or out and adjust their chosen juicebox.
         </figcaption>
     </figure>
-    <figure><video controls src="../res/project-info-res/jb/pushed.mp4" alt=""></video>
+    <figure><video controls src="public/project-info-res/jb/pushed.mp4" alt=""></video>
         <figcaption>Players can also act aggressively by pushing their opponents through one-way platforms.
         </figcaption>
     </figure>
@@ -75,8 +75,7 @@
     "juicy" and used the same synthesizer instruments to create them so they meshed together.
     I think they added a lot to the game feel, especially since a bunch of them play at once.
     One small detail is that the sounds that play when the most common obstacles spawn vary around a
-    C minor chord, the same chord the background tracks center around, adding sort of a non-obtrusive randomized miny
-    melody to
+    C minor chord, the same chord the background tracks center around, adding sort of a non-obtrusive randomized mini-melody to
     reflect the random distribution
     of obstacles during gameplay.
 </p>
@@ -90,11 +89,11 @@
 </p>
 
 <div class='project-info-gallery'>
-    <figure><img src="../res/project-info-res/jb/achiee.png" alt="">
+    <figure><img src="public/project-info-res/jb/achiee.png" alt="">
         <figcaption>Players can view a grid of all achievements and their unlock conditions.
         </figcaption>
     </figure>
-    <figure><img src="../res/project-info-res/jb/menu.gif" alt="">
+    <figure><img src="public/project-info-res/jb/menu.gif" alt="">
         <figcaption>The simple menu design draws the player's attention to the achievement unlocks as goals straightaway.
         </figcaption>
     </figure>

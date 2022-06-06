@@ -1,4 +1,4 @@
-<h1>Parole in One</h2>
+<h2 class='project-title'>Parole in One</h2>
     <section class='project-info-summary'>
         <p>May 2020</p>
         <ul class='tools-list'>
@@ -52,10 +52,10 @@
     </p>
 
     <section class='project-info-gallery'>
-        <figure><img src="../res/project-info-res/pio/concept-0.png" alt=""></figure>
-        <figure><img src="../res/project-info-res/pio/concept-1.png" alt=""></figure>
-        <figure><img src="../res/project-info-res/pio/concept-2.png" alt=""></figure>
-        <figure><img src="../res/project-info-res/pio/concept-3.png" alt=""></figure>
+        <figure><img src="public/project-info-res/pio/concept-0.png" alt=""></figure>
+        <figure><img src="public/project-info-res/pio/concept-1.png" alt=""></figure>
+        <figure><img src="public/project-info-res/pio/concept-2.png" alt=""></figure>
+        <figure><img src="public/project-info-res/pio/concept-3.png" alt=""></figure>
     </section>
 
     <p>
@@ -69,13 +69,13 @@
     </p>
 
     <section class='project-info-gallery'>
-        <figure><img src="../res/project-info-res/pio/alarm-intro.png" alt="">
+        <figure><img src="public/project-info-res/pio/alarm-intro.png" alt="">
             <figcaption>Here, the player is is taught to use the alarm tile to lure
                 a guard away from the goal. This notion of the alarm as a tool is
                 useful to carry over to other levels.
             </figcaption>
         </figure>
-        <figure><img src="../res/project-info-res/pio/scramble-level.png" alt="">
+        <figure><img src="public/project-info-res/pio/scramble-level.png" alt="">
             <figcaption>Here, the alarm becomes a forced detriment to the player's
                 navigation by sending both guards towards a bottleneck in the level, leaving the
                 player to hit all the buttons while evading them.
@@ -91,14 +91,14 @@
     </p>
 
     <section class='project-info-gallery'>
-        <figure><img src="../res/project-info-res/pio/guard-buttons.png" alt="">
+        <figure><img src="public/project-info-res/pio/guard-buttons.png" alt="">
             <figcaption>The challenge in this level revolves around the player lining up
                 the perfect shot, without much time pressure. It also uses the guard robots
                 in a helpful way -- instead of being an obstacle, it inadvertently hits buttons
                 on its patrol route that enable and disable doors for the player.
             </figcaption>
         </figure>
-        <figure><img src="../res/project-info-res/pio/big-level.png" alt="">
+        <figure><img src="public/project-info-res/pio/big-level.png" alt="">
             <figcaption>This level is a gauntlet of skirmishes with odd geometry and guard
                 patrols. The player has the option to slip through slowly and stealthily, swerve through
                 the level as fast as possible, or line up careful shots that traverse vast chunks
@@ -113,19 +113,19 @@
     </p>
 
     <section class='project-info-gallery'>
-        <img class='medium' src="../res/project-info-res/pio/p0.png" alt="">
-        <img class='medium' src="../res/project-info-res/pio/p1.png" alt="">
-        <img class='medium' src="../res/project-info-res/pio/p2.png" alt="">
-        <img class='medium' src="../res/project-info-res/pio/p3.png" alt="">
-        <img class='medium' src="../res/project-info-res/pio/p4.png" alt="">
-        <img class='medium' src="../res/project-info-res/pio/p6.png" alt="">
-        <img class='medium' src="../res/project-info-res/pio/p7.png" alt="">
-        <img class='medium' src="../res/project-info-res/pio/p8.png" alt="">
-        <img class='medium' src="../res/project-info-res/pio/p9.png" alt="">
-        <img class='medium' src="../res/project-info-res/pio/p10.png" alt="">
-        <img class='medium' src="../res/project-info-res/pio/p11.png" alt="">
-        <img class='medium' src="../res/project-info-res/pio/p12.png" alt="">
-        <img class='medium' src="../res/project-info-res/pio/p13.png" alt="">
+        <img class='medium' src="public/project-info-res/pio/p0.png" alt="">
+        <img class='medium' src="public/project-info-res/pio/p1.png" alt="">
+        <img class='medium' src="public/project-info-res/pio/p2.png" alt="">
+        <img class='medium' src="public/project-info-res/pio/p3.png" alt="">
+        <img class='medium' src="public/project-info-res/pio/p4.png" alt="">
+        <img class='medium' src="public/project-info-res/pio/p6.png" alt="">
+        <img class='medium' src="public/project-info-res/pio/p7.png" alt="">
+        <img class='medium' src="public/project-info-res/pio/p8.png" alt="">
+        <img class='medium' src="public/project-info-res/pio/p9.png" alt="">
+        <img class='medium' src="public/project-info-res/pio/p10.png" alt="">
+        <img class='medium' src="public/project-info-res/pio/p11.png" alt="">
+        <img class='medium' src="public/project-info-res/pio/p12.png" alt="">
+        <img class='medium' src="public/project-info-res/pio/p13.png" alt="">
     </section>
 
 
@@ -136,16 +136,16 @@
     </p>
 
     <section class='project-info-gallery'>
-        <img class='small' src="../res/project-info-res/pio/crack-goal.gif" alt="ball entering cracked hole">
-        <img class='small' src="../res/project-info-res/pio/subtle-goal.gif" alt="ball rolling into hole">
-        <img class='small' src="../res/project-info-res/pio/usable-goal.gif" alt="ball slipping into highlighted hole">
+        <img class='small' src="public/project-info-res/pio/crack-goal.gif" alt="ball entering cracked hole">
+        <img class='small' src="public/project-info-res/pio/subtle-goal.gif" alt="ball rolling into hole">
+        <img class='small' src="public/project-info-res/pio/usable-goal.gif" alt="ball slipping into highlighted hole">
     </section>
 
     <p>I also enjoyed making unlockable costumes for the player's ball, along with custom animations for reaching the end of a level:</p>
     <section class='project-info-gallery'>
-        <img class='small' src="../res/project-info-res/pio/donut.gif" alt="donut ball entering hole">
-        <img class='small' src="../res/project-info-res/pio/star.gif" alt="star ball entering hole">
-        <img class='small' src="../res/project-info-res/pio/gameboy.gif" alt="gameboy ball entering hole">
+        <img class='small' src="public/project-info-res/pio/donut.gif" alt="donut ball entering hole">
+        <img class='small' src="public/project-info-res/pio/star.gif" alt="star ball entering hole">
+        <img class='small' src="public/project-info-res/pio/gameboy.gif" alt="gameboy ball entering hole">
     </section>
 
     <p>Finally, I spent a lot of time on the game's sound design. We found it tough to balance the

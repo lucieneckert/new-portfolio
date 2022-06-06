@@ -1,4 +1,4 @@
-<h1>Enjoyable Block Game</h1>
+<h2 class='project-title'>Enjoyable Block Game</h2>
 <section class='project-info-summary'>
     <p>May 2021</p>
     <ul class='tools-list'>
@@ -26,7 +26,7 @@
 </p>
 
 <div class='project-info-gallery'>
-    <figure class='big'><img src="../res/project-info-res/ebg/action-screen.png" alt="Screenshot of the game's action phase">
+    <figure class='big'><img src="public/project-info-res/ebg/action-screen.png" alt="Screenshot of the game's action phase">
         <figcaption>
             Screenshot of the game's action phase. The two teams (blue
             and red) are competing to
@@ -40,7 +40,7 @@
             has double-jump-enabling wings.
         </figcaption>
     </figure>
-    <figure class='big'><img src="../res/project-info-res/ebg/puzzle-screen.png" alt="Screenshot of the game's puzzle phase">
+    <figure class='big'><img src="public/project-info-res/ebg/puzzle-screen.png" alt="Screenshot of the game's puzzle phase">
         <figcaption>
             Screenshot of the game's puzzle phase. The climber and UFO
             on each team have the chance
@@ -85,8 +85,8 @@
     together chords / melody fragments and layering tracks to create a
     soundtrack reflective of the state of the gameplay.
 </p>
-<video src="../res/project-info-res/ebg/demo.mp4" controls></video>
+<video class="project-img" src="public/project-info-res/ebg/demo.mp4" controls></video>
 <p>More detailed information on this project and the design/development
     process
-    can be found in <a href="../res/ebg-rationale.pdf">this
+    can be found in <a href='public/documents/ebg-rationale.pdf'>this
         rationale</a>.</p>

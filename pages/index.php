@@ -27,18 +27,16 @@
                     concentration on Interactive Technology and a minor in Game Design. Welcome to my portfolio!
                 </p>
                 <?php include('includes/index-gallery.php') ?>
-                <p>Prepare your eyeballs...</p>
-                <p>... and get on your hiring clothes.</p>
                 <a href="/projects">
                     <div class='projects-button'>
-                        <span>🡆 Okay, show me some projects already</span>
+                        <span>🡆 Okay, just show me some projects already</span>
                     </div>
                 </a>
             </article>
             <div>
             <section class='box-card resume'>
                 <img src="public/images/icons/limited.png" alt="Limited edition!" class='limited-edition'>
-                <a href='public/resume.pdf' class='bold-download-link'>
+                <a href='public/documents/resume.pdf' class='bold-download-link'>
                 <img src="public/images/icons/pdf.png" alt="">
                     <span>View "<em>The Resume</em>"!</span>
                 </a>

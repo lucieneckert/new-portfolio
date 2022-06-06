@@ -7,7 +7,8 @@ CREATE TABLE projects (
 
 CREATE TABLE categories (
     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
-    name TEXT NOT NULL UNIQUE
+    type TEXT NOT NULL UNIQUE,
+    category_color TEXT NOT NULL
 );
 
 CREATE TABLE project_categories (
@@ -33,7 +34,8 @@ CREATE TABLE project_tools (
 
 
 -- create categories
-INSERT INTO categories (name) VALUES ("game development"), ("coding projects"), ("web development"), ("music"); 
+INSERT INTO categories (type, category_color) 
+VALUES ("game development", "#820263"), ("coding projects", "#553E4E"), ("web development", "#F75C03"), ("music", "#D90368"); 
 -- create tools
 INSERT INTO tools (name)
 VALUES
@@ -49,7 +51,10 @@ VALUES
     ('Python'),
     ('Jupyter Notebooks'),
     ('OCaml'),
-    ('PyTorch')
+    ('PyTorch'),
+    ('HTML'),
+    ('CSS'),
+    ('PHP')
 ;
 -- game dev
 INSERT INTO projects (name, thumbnail_path, page_url) 
@@ -89,17 +94,18 @@ VALUES
     ('Misc. Web Dev Projects', 'webdev.png', 'webdev')
 ;
 INSERT INTO project_categories (project_id, category_id) VALUES (9, 3);
--- -- music
--- INSERT INTO projects (name, thumbnail_path, page_url)
--- VALUES 
---     ('Ragdoll Royale OST', 'rr-ost.png', 'rr-ost'),
---     ('A Small Game About Juiceboxes OST', 'jb-ost', 'jb-ost'),
---     ('Parole in One OST', 'pio-ost.png', 'pio-ost')
--- ;
--- INSERT INTO project_categories (project_id, category_id) VALUES (9, 3), (10, 3), (11, 3);
--- INSERT INTO project_tools (project_id, tool_id)
--- VALUES
---     (9, 7), (10, 1), (11, 1)
--- ;
+INSERT INTO project_tools (project_id, tool_id) VALUES (9, 14), (9, 15), (9, 16);
+-- music
+INSERT INTO projects (name, thumbnail_path, page_url)
+VALUES 
+    ('Ragdoll Royale OST', 'rr-ost.png', 'rr-ost'),
+    ('A Small Game About Juiceboxes OST', 'jb-ost', 'jb-ost'),
+    ('Parole in One OST', 'pio-ost.png', 'pio-ost')
+;
+INSERT INTO project_categories (project_id, category_id) VALUES (10, 4), (11, 4), (12, 4);
+INSERT INTO project_tools (project_id, tool_id)
+VALUES
+    (10, 8), (11, 2), (12, 2)
+;
 
 

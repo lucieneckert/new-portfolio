@@ -1,4 +1,4 @@
-<h1>Generating Pokemon Sprites With a GAN</h1>
+<h2 class='project-title'>Generating Pokemon Sprites With a GAN</h2>
 <section class='project-info-summary'>
     <p>November 2021</p>
     <ul class='tools-list'>
@@ -28,7 +28,7 @@
 
 <p>My initial attempts were somewhat lacking -- only having access to my laptop, training took a decent bit of
     time. After a few hundred epochs, the Generator was producing output like this:</p>
-<img src="../res/project-info-res/pgan/500epoch-highLR.png" alt="nebulous multicolored blobs barely representing pokemon">
+<img src="public/project-info-res/pgan/500epoch-highLR.png" alt="nebulous multicolored blobs barely representing pokemon">
 <p>While the general form had begun to emerge, edges were fuzzy and certain features were far more prominent
     than they should be
     (one Pokemon present in the training data has seven forms and thus seven times the entries of any other, so
@@ -39,7 +39,7 @@
     generated output collapsed into the following consistent noise:
 </p>
 
-<img src="../res/project-info-res/pgan/600epoch-highLR.png" alt="basically just rainbow noise">
+<img src="public/project-info-res/pgan/600epoch-highLR.png" alt="basically just rainbow noise">
 
 <p>Another issue was that the PyTorch tutorial didn't support
     images
@@ -57,10 +57,10 @@
 </p>
 
 <div class='project-info-gallery'>
-    <img class='large' src="../res/project-info-res/pgan/200epoch-lowLR.png" alt="200 epoch output of the improved model">
-    <img class='large' src="../res/project-info-res/pgan/400epoch-lowLR.png" alt="400 epoch output of the improved model">
-    <img class='large' src="../res/project-info-res/pgan/600epoch-lowLR.png" alt="600 epoch output of the improved model">
-    <img class='large' src="../res/project-info-res/pgan/800epoch-lowLR.png" alt="800 epoch output of the improved model">
+    <img class='large' src="public/project-info-res/pgan/200epoch-lowLR.png" alt="200 epoch output of the improved model">
+    <img class='large' src="public/project-info-res/pgan/400epoch-lowLR.png" alt="400 epoch output of the improved model">
+    <img class='large' src="public/project-info-res/pgan/600epoch-lowLR.png" alt="600 epoch output of the improved model">
+    <img class='large' src="public/project-info-res/pgan/800epoch-lowLR.png" alt="800 epoch output of the improved model">
 </div>
 
 <p>Now, the network was producing forms with clearer edges and expected features (limb-like protrusions) than
@@ -70,7 +70,7 @@
     sprites (especially if you squint), albeit with noisy color palettes.
 </p>
 
-<img src="../res/project-info-res/pgan/the-boy.png" alt="the boy (my favorite generation)">
+<img src="public/project-info-res/pgan/the-boy.png" alt="the boy (my favorite generation)">
 
 <p><em>Next Steps:</em>
 <ul>

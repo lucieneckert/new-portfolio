@@ -1,4 +1,4 @@
-<h1>Caml Climbers</h1>
+<h2 class='project-title'>Caml Climbers</h2>
 <section class='project-info-summary'>
     <p>May 2021</p>
     <ul class='tools-list'>
@@ -25,13 +25,13 @@
     from a directory, each with a clear structure that allows the user to add their own if decided.
 </p>
 
-<video controls src="../res/project-info-res/camlclimb/theme-change.mp4"></video>
+<video class='project-img' controls src="public/project-info-res/camlclimb/theme-change.mp4"></video>
 
 <p>We also allowed the user to choose various game speeds and keep track of their scores. Things could get
     pretty hectic on the highest difficulty:
 </p>
 
-<video controls src="../res/project-info-res/camlclimb/high-speed.mp4"></video>
+<video class='project-img' controls src="public/project-info-res/camlclimb/high-speed.mp4"></video>
 
 <p>The visuals are a little rough around the edges, but considering we made the choice to draw everything
     on-screen with primitive shapes to reduce the number of packages we were dependent on, I'm happy

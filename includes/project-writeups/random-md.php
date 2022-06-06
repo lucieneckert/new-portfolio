@@ -1,4 +1,4 @@
-<h1>Random Mystery Dungeon Generator</h1>
+<h2 class='project-title'>Random Mystery Dungeon Generator</h2>
 <section class='project-info-summary'>
     <p>November 2021</p>
     <ul class='tools-list'>
@@ -82,8 +82,8 @@ The system could then produce outputs such as these:
 <p>Creating some initial images to better visualize these representations is easy enough. We want every tile to be 32x32, so using PIL to generate images of the proper size from a given array's shape and "pasting" tiles at certain positions, we can already make some images with placeholder graphics:</p>
 
 <div class='project-info-gallery'>
-    <figure><img src="../res/project-info-res/rmd/initial-0.png" alt=""></figure>
-    <figure><img src="../res/project-info-res/rmd/initial-1.png" alt=""></figure>
+    <figure><img src="public/project-info-res/rmd/initial-0.png" alt=""></figure>
+    <figure><img src="public/project-info-res/rmd/initial-1.png" alt=""></figure>
 </div>
 
 <p><em>Next Steps:</em> Generate and use more appropriate tilesets, etc.</p>
