@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Raleway:ital,wght@1,800&display=swap');
 
+
+@font-face {
+    font-family: blockyFont;
+    src: url("/public/fonts/customblockfont.ttf");
+}
+
+
 html {
     background: #001220 url('/public/images/circle-scatter-haikei.svg') no-repeat center center fixed;
     background-size: cover;
@@ -53,11 +60,9 @@ span.version-subtitle {
     border: 2px solid grey;
 }
 
-nav ul {
-    margin-left: -40px;
-}
 
 nav li {
+    position: relative;
     display: inline-block;
     margin: 20px 5px;
     filter: drop-shadow(5px 5px 0px grey);
@@ -66,6 +71,23 @@ nav li {
     font-size: 1.2em;
     background: #ebebeb;
     transition: 0.1s;
+}
+
+nav .highlighted {
+    border: 2px solid black;
+    background-color: lightgray;
+}
+
+nav li span {
+    position: absolute;
+    left: 0px;
+    top: -30px;
+    width: 100px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-family: blockyFont, sans-serif;
 }
 
 nav li:hover {
@@ -151,6 +173,7 @@ nav a {
 
 .resume {
     min-width: 300px;
+    position: relative;
 }
 
 .resume .bold-download-link span {
@@ -169,7 +192,26 @@ nav a {
     color: black;
     font-size: 1.5em;
     font-weight: bold;
-    text-decoration: underline;
+}
+
+.resume-exclamation {
+    position: absolute;
+    font-weight: bold;
+    color: #CCCCCC;
+    font-size: 1.5em;
+    user-select: none;
+}
+
+.left-exclamation {
+    left: 90px;
+    top: 10px;
+    transform: rotate(-25deg);
+}
+
+.right-exclamation {
+    right: 15px;
+    bottom: 15px;
+    transform: rotate(15deg);
 }
 
 @keyframes shrink-grow {
@@ -213,11 +255,13 @@ nav a {
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
+    border-bottom: 2px solid black;
 }
 
 .tools-list {
     list-style-type: none;
     padding: 0;
+    margin-top: 5px;
 }
 
 .tools-list li {
@@ -230,17 +274,16 @@ nav a {
 }
 
 .project-card {
-    /* border-radius: 20px; */
+    border-radius: 20px;
     padding: 30px 40px;
     background-color: #ebebeb;
     margin: 10px;
-    color: white;
-    height: 200px;
-    width: 17%;
+    color: black;
+    height: 225px;
+    width: 18%;
     text-align: left;
     /* filter: drop-shadow(0px 10px 4px #CCCCCC); */
     overflow: hidden;
-    border: 1px solid lightgrey;
     transition: 0.25s;
     text-decoration: none;
 }
@@ -258,6 +301,7 @@ nav a {
 
 .project-card h3 {
     margin-bottom: 0px;
+    margin-top: 15px;
 }
 
 .project-card h4 {
@@ -316,11 +360,11 @@ blockquote {
 }
 
 .project-info-gallery img {
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .project-info-gallery video {
-    width: 400px;
+    width: 500px;
     flex-grow: 1;
 }
 
@@ -344,8 +388,45 @@ blockquote {
 .project-info-gallery figcaption {
     padding: 10px;
     font-size: 0.8em;
-    width: 380px;
+    width: 480px;
     background-color: lightgrey;
+}
+
+.catalog .thumbnail {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    object-fit: cover;
+    cursor: pointer;
+    padding: 0px !important;
+}
+
+.catalog .thumbnail img {
+    width: 100%;
+}
+
+.catalog .expanded {
+    width: 1000px;
+    height: 500px;
+    max-width: 90%;
+}
+
+.catalog .expanded img {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: inline-block;
+    margin: 0px auto;
+    height: 500px;
+    max-width: 60%;
+}
+
+.catalog .expanded figcaption {
+    display: inline;
+}
+
+.catalog .thumbnail figcaption {
+    display: none;
 }
 
 .project-img {

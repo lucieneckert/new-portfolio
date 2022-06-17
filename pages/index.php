@@ -35,10 +35,11 @@
             </article>
             <div>
             <section class='box-card resume'>
+                <span class='resume-exclamation left-exclamation'>whoa!</span>
+                <span class='resume-exclamation right-exclamation'>wow!</span>
                 <img src="public/images/icons/limited.png" alt="Limited edition!" class='limited-edition'>
                 <a href='public/documents/resume.pdf' class='bold-download-link'>
-                <img src="public/images/icons/pdf.png" alt="">
-                    <span>View "<em>The Resume</em>"!</span>
+                <img src="public/images/icons/pdf.png" alt=""><span>View "<em>The Resume</em>"!</span> 
                 </a>
             </section>
             <section class='box-card'>

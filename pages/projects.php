@@ -26,7 +26,7 @@ $tools = exec_query($db, $tools_query)->fetchAll();
         <div class='spacious-flex'>
             <?php foreach ($projects as $project) {
             ?>
-                <a href="view?project=<?php echo $project['page_url'] ?>" class='project-card box-card' style="background-color: <?php echo $project['category_color'] ?>" >
+                <a href="view?project=<?php echo $project['page_url'] ?>" class='project-card box-card' >
                         <img class='project-card-banner' src="public/images/project-thumbs/<?php echo $project['thumbnail_path'] ?>" alt="" />
                         <h3><?php echo $project['name'] ?></h3>
                         <ul class='tools-list'>

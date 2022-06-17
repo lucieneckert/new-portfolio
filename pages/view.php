@@ -27,6 +27,13 @@ $project = exec_query_params($db, "SELECT * FROM projects WHERE (page_url = :pro
     <?php include ('includes/project-writeups/' . $_GET['project'] . '.php'); ?>
 
     </section>
+
+    <a href="/projects">
+        <div class='projects-button'>
+            <span>🡄 Back to Projects</span>
+        </div>
+    </a>
+
 </body>
 
 </html>

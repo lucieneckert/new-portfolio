@@ -1,10 +1,5 @@
 <style>
 
-    @font-face {
-        font-family: blockyFont;
-        src: url("/public/fonts/customblockfont.ttf");
-    }
-
     #top-bar {
         margin-top: -10px;
         margin-left: -20px;
