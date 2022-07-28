@@ -23,21 +23,28 @@ $tools = exec_query($db, $tools_query)->fetchAll();
     </header>
     <section class='main'>
         <h1>Projects</h1>
+        <div>
+            Featured Project
+        </div>
+        <div>
+            Current Project
+        </div>
+        <hr>
         <div class='spacious-flex'>
             <?php foreach ($projects as $project) {
             ?>
-                <a href="view?project=<?php echo $project['page_url'] ?>" class='project-card box-card' >
-                        <img class='project-card-banner' src="public/images/project-thumbs/<?php echo $project['thumbnail_path'] ?>" alt="" />
-                        <h3><?php echo $project['name'] ?></h3>
-                        <ul class='tools-list'>
-                            <?php
-                            foreach ($tools as $tool) {
-                                if ($tool['projects.id'] == $project['id']) {
-                            ?> <li> <?php echo $tool['tools.name'] ?> </li> <?php
-                                                                                        }
-                                                                                    }
-                                                                                            ?>
-                        </ul>
+                <a href="view?project=<?php echo $project['page_url'] ?>" class='project-card box-card'>
+                    <img class='project-card-banner' src="public/images/project-thumbs/<?php echo $project['thumbnail_path'] ?>" alt="" />
+                    <h3><?php echo $project['name'] ?></h3>
+                    <ul class='tools-list'>
+                        <?php
+                        foreach ($tools as $tool) {
+                            if ($tool['projects.id'] == $project['id']) {
+                        ?> <li> <?php echo $tool['tools.name'] ?> </li> <?php
+                                                                        }
+                                                                    }
+                                                                            ?>
+                    </ul>
                 </a>
             <?php } ?>
         </div>

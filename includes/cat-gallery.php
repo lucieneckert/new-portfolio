@@ -37,8 +37,9 @@ const spawnImagesOnLoop = () => {
 <style>
 
 #cat-gallery {
-    height: 0px;
+    height: 500px;
     position: relative;
+    overflow: hidden;
 }
 
 #cat-gallery .cat-pic {

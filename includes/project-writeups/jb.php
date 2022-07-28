@@ -27,15 +27,17 @@
 
 <div class='project-info-gallery'>
     <figure><img src="public/project-info-res/jb/mp-riskreward.png" alt="">
-        <figcaption>Certain stages make certain obstacles more or less difficult.
-            Often, due to their spawn locations, the reward of getting a power-up comes at the cost of the player
+        <figcaption>Certain stages were designed to make certain obstacles more or less difficult.
+            Here, the multiple levels create barriers and protect players from falling obstacles.
+            In this stage, power-ups only spawn on the top level of platforms -- the reward of getting a power-up 
+            and refilling the player's juice meter comes at the cost of the player
             putting themselves in an extremely risky spot.
         </figcaption>
     </figure>
     <figure><img src="public/project-info-res/jb/jumping.gif" alt="">
         <figcaption>Early version of the game's movement. Triggering visual effects
             on jumping/landing made what's essentially a flat square zooming around
-            feel like it had weight behind it.</figcaption>
+            feel like it had weight behind it. This was improved later with tweening the juicebox's scale, creating stretch and squish effects.</figcaption>
     </figure>
 </div>
 

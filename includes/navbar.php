@@ -3,16 +3,16 @@
 ?>
 
 <nav class='sideways-flex'>
-    <a href="/"><img id='logo-img' src="public/images/cat.jpg" alt=""></a>
+    <a href="/"><img id='logo-img' src="public/images/cat2.jpg" alt=""></a>
     <ul>
         <a id='index' href="/"><li class='<?php if ($_SERVER['REQUEST_URI'] == "/") echo "highlighted" ?>'>
-            index
+        📇index
         </li></a>
         <a id='projects' href="/projects"><li class='<?php if ($_SERVER['REQUEST_URI'] == "/projects") echo "highlighted" ?>'>
-            projects
+        🖼️projects
         </li></a>
         <a id='blog' href="/blog"><li class='<?php if ($_SERVER['REQUEST_URI'] == "/blog") echo "highlighted" ?>'>
-            blog
+        📓blog
         </li></a>
     </ul>
 </nav>

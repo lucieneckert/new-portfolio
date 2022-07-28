@@ -15,41 +15,56 @@
         <?php include('includes/navbar.php') ?>
     </header>
     <section class='main'>
-        <h1>Lucien's Portfolio <span class='version-subtitle'>v4.0</span></h1>
+        <h1>Welcome! <span class='version-subtitle'>v4.0</span></h1>
         <div class='sideways-flex'>
             <article class='index-desc'>
-                <p>
-                    Hi! I'm Lucien, a fourth-year undergrad student studying at the College of
-                    Arts and Sciences at Cornell
-                    University.
-                    I'm currently pursuing a bachelor's degree in <a href="https://infosci.cornell.edu/undergraduate/info-sci-majors/ba-information-science-college-arts-sciences" target="_blank">Information
-                        Science</a>, with a
-                    concentration on Interactive Technology and a minor in Game Design. Welcome to my portfolio!
-                </p>
-                <?php include('includes/index-gallery.php') ?>
-                <a href="/projects">
-                    <div class='projects-button'>
+                <div class='sideways-flex'>
+                    <img src="public/images/self.jpg" alt="selfie, with cat" style="height: 200px; padding: 20px;">
+                    <p>
+                        <em class="bold-paragraph-title">
+                            Hi! I'm Lucien, a fourth-year student studying at the College of
+                            Arts and Sciences at Cornell
+                            University. <br>
+                        </em>
+                        I'm currently pursuing a bachelor's degree in <a href="https://infosci.cornell.edu/undergraduate/info-sci-majors/ba-information-science-college-arts-sciences" target="_blank">Information
+                            Science</a> with a minor in Game Design, graduating in December 2022. I'm also on track to graduate with an MPS degree
+                        in May 2023 through <a href="https://infosci.cornell.edu/undergraduate/early-admit-mps">Cornell's early admit program.</a>
+                        In my free time, I work to develop games either solo or with a few friends.
+                        Welcome to my portfolio!
+                    </p>
+                </div>
+                <div class='sideways-flex'>
+                    <a href="/projects" class='projects-button'>
                         <span>🡆 Okay, just show me some projects already</span>
-                    </div>
-                </a>
+                    </a>
+                    <a href="/projects" class='projects-button'>
+                        <span>🡆 Okay, just show me some projects already</span>
+                    </a>
+                </div>
             </article>
             <div>
-            <section class='box-card resume'>
-                <span class='resume-exclamation left-exclamation'>whoa!</span>
-                <span class='resume-exclamation right-exclamation'>wow!</span>
-                <img src="public/images/icons/limited.png" alt="Limited edition!" class='limited-edition'>
-                <a href='public/documents/resume.pdf' class='bold-download-link'>
-                <img src="public/images/icons/pdf.png" alt=""><span>View "<em>The Resume</em>"!</span> 
-                </a>
-            </section>
-            <section class='box-card'>
+                <section class='box-card resume'>
+                    <span class='resume-exclamation left-exclamation'>whoa!</span>
+                    <span class='resume-exclamation right-exclamation'>wow!</span>
+                    <img src="public/images/icons/limited.png" alt="Limited edition!" class='limited-edition'>
+                    <a href='public/documents/resume.pdf' class='bold-download-link'>
+                        <img src="public/images/icons/pdf.png" alt=""><span>View "<em>The Resume</em>"!</span>
+                    </a>
+                </section>
+                <section class='box-card'>
                     <h2>Links</h2>
                     <ul class='link-list'>
-                        <li><img class="link-icon" src="public/images/icons/github.svg" alt=""><a href="https://github.com/lucieneckert">GitHub</a></li>
-                        <li><img class="link-icon" src="public/images/icons/linkedin.svg" alt=""><a href="https://www.linkedin.com/in/lucien-eckert/">Linkedin</a></li>
-                        <li><img class="link-icon" src="public/images/icons/mail.svg" alt=""><a href="mailto:lee48@cornell.edu">lee48@cornell.edu</a></li>
+                        <a href="https://github.com/lucieneckert">
+                            <li><img class="link-icon" src="public/images/icons/github.svg" alt=""><span>GitHub</span></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lucien-eckert/">
+                            <li><img class="link-icon" src="public/images/icons/linkedin.svg" alt=""><span>Linkedin</span></li>
+                        </a>
+                        <a href="mailto:lee48@cornell.edu">
+                            <li><img class="link-icon" src="public/images/icons/mail.svg" alt=""><span>lee48@cornell.edu</span></li>
+                        </a>
                     </ul>
-            </section>
+                </section>
             </div>
         </div>
     </section>
