@@ -262,6 +262,16 @@ nav a {
 }
 
 /* Project grid stuff */
+#projects-filter-bar {
+    position: sticky;
+    width: 10rem;
+    top: 1rem;
+}
+
+#projects-filter-bar ul {
+    list-style: none;
+    margin-left: -40px;
+}
 .spacious-flex {
     display: flex;
     flex-wrap: wrap;

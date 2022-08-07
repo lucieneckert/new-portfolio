@@ -77,7 +77,7 @@ VALUES
 -- coding projects
 INSERT INTO projects (name, thumbnail_path, page_url)
 VALUES 
-    ('Generating Pokemon Sprites with a GAN', 'pokemon.png', 'pokegan'),
+    ('GAN Pokemon Sprite Tuning', 'pokemon.png', 'pokegan'),
     ('CamlClimbers: Tetris variant in OCaml', 'camls.png', 'caml-climbers'),
     ('Random Mystery Dungeon Generator', 'dungeons.png', 'random-md')
 ;
