@@ -37,7 +37,7 @@
                     <a href="/projects" class='projects-button'>
                         <span>🡆 Okay, just show me some projects already</span>
                     </a>
-                    <a href="/projects" class='projects-button'>
+                    <a href="https://twitter.com/sprodsoft" class='projects-button' target="_blank">
                         <span>🡆 See what I'm currenly working on at SPRODSOFT</span>
                     </a>
                 </div>

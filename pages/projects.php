@@ -8,6 +8,8 @@ $tools = exec_query($db, $tools_query)->fetchAll();
 
 <html lang="en">
 
+<script src='public/scripts/projects-filter.js'></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,49 +25,52 @@ $tools = exec_query($db, $tools_query)->fetchAll();
     </header>
     <section class='main'>
         <h1>Projects</h1>
-        <h2>Featured Projects</h2>
-        <div class='sideways-flex'>
-            <div class='box-card'>
-                <h3>Play Something In Your Browser Right Now</h3>
-                <p>Want to confirm that I do make things that run? Check out </p>
-                <p>Or, read more about it <a href="">here</a>.</p>
-            </div>
-            <div class='box-card'>
-                <h3>Current Project</h3>
-            </div>
-        </div>
-        <hr>
-        <h2>The Big List</h2>
         <div class=' sideways-flex'>
             <div>
                 <div id='projects-filter-bar' class='box-card'>
-                    <h3>Filter</h3>
+                    <p>Filter</p>
                     <ul>
-                        <li>🎲Games</li>
-                        <li>🐛Coding</li>
-                        <li>🎼Music</li>
-                        <li>🖥️Web</li>
+                        <li class="filter-button" id='filter-all' onclick="filterProjects('all')">🌟 <br> All</li>
+                        <li class="filter-button" id='filter-games' onclick="filterProjects('games')">🎲 <br> Games</li>
+                        <li class="filter-button" id='filter-coding' onclick="filterProjects('coding')">🐛 <br> Coding</li>
+                        <li class="filter-button" id='filter-music' onclick="filterProjects('music')">🎼 <br> Music</li>
+                        <li class="filter-button" id='filter-web' onclick="filterProjects('web')">🖥️ <br> Web</li>
                     </ul>
                 </div>
-            </div>
-            <div class='spacious-flex'>
-                <?php foreach ($projects as $project) {
-                ?>
-                    <a href="view?project=<?php echo $project['page_url'] ?>" class='project-card box-card'>
-                        <img class='project-card-banner' src="public/images/project-thumbs/<?php echo $project['thumbnail_path'] ?>" alt="" />
-                        <h3><?php echo $project['name'] ?></h3>
-                        <ul class='tools-list'>
-                            <?php
-                            foreach ($tools as $tool) {
-                                if ($tool['projects.id'] == $project['id']) {
-                            ?> <li> <?php echo $tool['tools.name'] ?> </li> <?php
+                <img src="public/images/icons/rightarrow.png" class="filter-indicator"/>
+        </div>
+        <div>
+            <div class='featured-project' style="min-width: 40%;">
+                <h2 class='featured-project-title'>Featured Project</h2>
+                    <div class='sideways-flex'>
+                        <div class="featured-project-text">
+                            <img src="public/images/project-thumbs/jb-banner.png" alt="A Small Game About Juiceboxes" class="featured-project-img">
+                            <p>My first solo game project made using Godot Engine. Developed over three months in quarantine, the focus of this project was to experiment with game "juice" (hence the name) and familiarize myself with the process of developing a game from start to finish.</p>
+                            <a href="/view?project=jb">Read more here.</a>
+                        </div>
+                        <video src="public/project-info-res/jb/jb-trailer.mp4" controls class="featured-project-vid"></video>
+                    </div>
+                </div>
+                <div class='spacious-flex'>
+                    <?php foreach ($projects as $project) {
+                    ?>
+                        <a href="view?project=<?php echo $project['page_url'] ?>" class='project-card box-card project-<?php echo $project['type']?>'>
+                            <img class='project-card-banner' src="public/images/project-thumbs/<?php echo $project['thumbnail_path'] ?>" alt="" />
+                            <h3><?php echo $project['name'] ?></h3>
+                            <ul class='tools-list'>
+                                <?php
+                                foreach ($tools as $tool) {
+                                    if ($tool['projects.id'] == $project['id']) {
+                                ?> <li> <?php echo $tool['tools.name'] ?> </li> <?php
+                                                                            }
                                                                         }
-                                                                    }
-                                                                            ?>
-                        </ul>
-                    </a>
-                <?php } ?>
+                                                                                ?>
+                            </ul>
+                        </a>
+                    <?php } ?>
+                </div>
             </div>
+
         </div>
 
 </body>

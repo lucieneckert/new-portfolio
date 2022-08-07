@@ -35,7 +35,7 @@ CREATE TABLE project_tools (
 
 -- create categories
 INSERT INTO categories (type, category_color) 
-VALUES ("game development", "#820263"), ("coding projects", "#553E4E"), ("web development", "#F75C03"), ("music", "#D90368"); 
+VALUES ("games", "#820263"), ("coding", "#553E4E"), ("web", "#F75C03"), ("music", "#D90368"); 
 -- create tools
 INSERT INTO tools (name)
 VALUES
