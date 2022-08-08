@@ -184,6 +184,7 @@ nav a {
     padding: 10px 10px;
     margin: 20px;
     font-style: italic;
+    text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
     border: 3px solid black;
@@ -266,6 +267,7 @@ nav a {
 
 /* Project grid stuff */
 #projects-filter-bar {
+    display: inline-block;
     position: sticky;
     width: 5rem;
     top: 1rem;
@@ -324,6 +326,14 @@ nav a {
     background-color: purple;
     color: white;
     border-radius: 10px;
+}
+
+.featured-project .projects-button {
+    font-size: 1.25em;
+    padding: 5px;
+    margin: 0px 5px;
+    color: black;
+    background-color: white;
 }
 
 .featured-project-title {

@@ -22,6 +22,9 @@ switch ($request) {
     case '/blog':
         require 'pages/blog.php';
         break;
+    case '/jb-browser-ver':
+        require 'pages/jb-browser/jb-browser-ver.html';
+        break;
     default:
         http_response_code(404);
 }
