@@ -79,6 +79,11 @@ nav li {
     transition: 0.1s;
 }
 
+nav li:active {
+    filter: drop-shadow(3px 3px 0px grey);
+    transform: translate(2px, 2px);
+}
+
 nav .highlighted {
     border: 2px solid black;
     background-color: lightgray;
@@ -226,18 +231,19 @@ nav a {
     color: #CCCCCC;
     font-size: 1.5em;
     user-select: none;
+    z-index: -1;
 }
 
 .left-exclamation {
     left: 90px;
     top: 10px;
-    transform: rotate(-25deg);
+    transform: rotate(-20deg);
 }
 
 .right-exclamation {
     right: 15px;
     bottom: 15px;
-    transform: rotate(15deg);
+    transform: rotate(10deg);
 }
 
 @keyframes shrink-grow {
@@ -268,9 +274,7 @@ nav a {
 /* Project grid stuff */
 #projects-filter-bar {
     display: inline-block;
-    position: sticky;
     width: 5rem;
-    top: 1rem;
     padding: 10px;
     margin: 0px;
 }

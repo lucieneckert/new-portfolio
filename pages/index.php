@@ -26,6 +26,7 @@
                             Arts and Sciences at Cornell
                             University. <br>
                         </em>
+                        <br>
                         I'm currently pursuing a bachelor's degree in <a href="https://infosci.cornell.edu/undergraduate/info-sci-majors/ba-information-science-college-arts-sciences" target="_blank">Information
                             Science</a> with a minor in Game Design, graduating in December 2022. I'm also on track to graduate with an MPS degree
                         in May 2023 through <a href="https://infosci.cornell.edu/undergraduate/early-admit-mps">Cornell's early admit program.</a>

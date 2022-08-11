@@ -27,18 +27,20 @@ $tools = exec_query($db, $tools_query)->fetchAll();
         <h1>Projects</h1>
         <div class=' sideways-flex'>
             <div>
-                <div id='projects-filter-bar' class='box-card'>
-                    <p>Filter</p>
-                    <ul>
-                        <li class="filter-button" id='filter-all' onclick="filterProjects('all')">🌟 <br> All</li>
-                        <li class="filter-button" id='filter-games' onclick="filterProjects('games')">🎲 <br> Games</li>
-                        <li class="filter-button" id='filter-coding' onclick="filterProjects('coding')">🐛 <br> Coding</li>
-                        <li class="filter-button" id='filter-music' onclick="filterProjects('music')">🎼 <br> Music</li>
-                        <li class="filter-button" id='filter-web' onclick="filterProjects('web')">🖥️ <br> Web</li>
-                    </ul>
+                <div style="position: sticky; top: 1rem">
+                    <div id='projects-filter-bar' class='box-card'>
+                        <p>Filter</p>
+                        <ul>
+                            <li class="filter-button" id='filter-all' onclick="filterProjects('all')">🌟 <br> All</li>
+                            <li class="filter-button" id='filter-games' onclick="filterProjects('games')">🎲 <br> Games</li>
+                            <li class="filter-button" id='filter-coding' onclick="filterProjects('coding')">🐛 <br> Coding</li>
+                            <li class="filter-button" id='filter-music' onclick="filterProjects('music')">🎼 <br> Music</li>
+                            <li class="filter-button" id='filter-web' onclick="filterProjects('web')">🖥️ <br> Web</li>
+                        </ul>
+                    </div>
+                    <img src="public/images/icons/rightarrow.png" class="filter-indicator"/>
                 </div>
-                <img src="public/images/icons/rightarrow.png" class="filter-indicator"/>
-        </div>
+            </div>
         <div>
             <div class='featured-project' style="min-width: 40%;">
                 <h2 class='featured-project-title'>Featured Project</h2>

@@ -59,6 +59,10 @@
         opacity: 0;
         animation-duration: 1s;
     }
+    #xbutton img {
+        width: 100%;
+        image-rendering: crisp-edges;
+    }
 
     @keyframes fade {
         from {opacity: 1; }
@@ -82,6 +86,8 @@
             "???",
             "What would this even do?",
             ";-;",
+            "Sorry if this is too cheesy",
+            "Figured it wouldn't hurt to give the site a little personality",
         ]
         let currentPositionIdx = 0;
         const setupXButton = () => {
@@ -126,8 +132,7 @@
         <div class='line'></div>
     </div>
     <div id='xbutton'>
-        <div class='line light tiltleft boldline'></div>
-        <div class='line light tiltright boldline'></div>
+        <img src="public/images/icons/x.png" alt="x button">
         <p id="xbutton-text">X Button Text...</p>
     </div>
     <script>
