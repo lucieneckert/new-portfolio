@@ -99,7 +99,7 @@ INSERT INTO project_tools (project_id, tool_id) VALUES (9, 14), (9, 15), (9, 16)
 INSERT INTO projects (name, thumbnail_path, page_url)
 VALUES 
     ('Ragdoll Royale OST', 'rr-ost.png', 'rr-ost'),
-    ('A Small Game About Juiceboxes OST', 'jb-ost', 'jb-ost'),
+    ('A Small Game About Juiceboxes OST', 'jb-ost.png', 'jb-ost'),
     ('Parole in One OST', 'pio-ost.png', 'pio-ost')
 ;
 INSERT INTO project_categories (project_id, category_id) VALUES (10, 4), (11, 4), (12, 4);

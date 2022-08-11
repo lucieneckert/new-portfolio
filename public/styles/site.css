@@ -545,6 +545,39 @@ blockquote {
     margin: 10px auto;
 }
 
+.music-player {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.music-player img {
+    width: 40%;
+    height: 40%;
+    image-rendering: crisp-edges;
+    border: 5px solid black;
+}
+
+.music-player .music-player-tracks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.music-player .music-player-tracks audio {
+    padding: 10px;
+}
+
+.music-player .music-player-tracks label {
+    padding-left: 10px;
+}
+
 @media (max-width: 700px) {
     .project-info-gallery video {
         width: 150%;

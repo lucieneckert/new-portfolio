@@ -9,7 +9,7 @@
 <p>
     Ragdoll Royale was a project I worked on for <a href="https://classes.cornell.edu/browse/roster/SP22/class/INFO/4152">INFO 4152: Advanced Game Development</a>.
     The game was written in C++ using the course's in-house CUGL engine. I worked on both design and programming tasks for this project, centralizing my
-    focus around the game's audio features. As part of the course's requirements, the game targeted mobile devices, which brought with it a bunch of challenges --
+    focus around the game's audio features and level design. As part of the course's requirements, the game targeted mobile devices, which brought with it a bunch of challenges --
     especially when it came to audio and playtesting.
 </p>
 
@@ -54,6 +54,12 @@
 <p>
     The initial plan was ... . This quickly moved out of scope, and I instead produced three (four, counting the tutorial music) sets of drawing and simulating 
     phase background tracks, alongside one menu theme -- they're organized <a href="">here</a>.
+</p>
+
+<p>
+    Alongside composition, I was also in charge of implementing all of the audio systems in our game. I hadn't worked with game audio on such a low level before, managing slots
+    and audio graph nodes and such in efficient ways (not to mention the learning curve of C++ continuing to surprise me.  It was extremely satisfying when things clicked into place and we ended up
+    with a pretty a smooth aural experience that wasn't going to blow out anyone's speakers.  
 </p>
 
 <p>
