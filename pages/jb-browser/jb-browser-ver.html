@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml' lang='' xml:lang=''>
+
 <head>
 	<meta charset='utf-8' />
 	<meta name='viewport' content='width=device-width, user-scalable=no' />
 	<title></title>
+	<link rel="stylesheet" href="/public/styles/site.css">
 	<style type='text/css'>
-
 		body {
 			touch-action: none;
-			margin: 0;
 			border: 0 none;
-			padding: 0;
-			text-align: center;
-			background-color: black;
+			width: 1100px;
 		}
 
 		#canvas {
-			display: block;
-			margin: 0;
+			display: absolute;
+			left: 0rem;
+			width: 1100px;
+			margin: 0px;
 			color: white;
 		}
 
@@ -84,7 +84,7 @@
 			position: relative;
 		}
 
-		#status-indeterminate > div {
+		#status-indeterminate>div {
 			width: 4.5px;
 			height: 0;
 			border-style: solid;
@@ -94,14 +94,37 @@
 			position: absolute;
 		}
 
-		#status-indeterminate > div:nth-child(1) { transform: rotate( 22.5deg); }
-		#status-indeterminate > div:nth-child(2) { transform: rotate( 67.5deg); }
-		#status-indeterminate > div:nth-child(3) { transform: rotate(112.5deg); }
-		#status-indeterminate > div:nth-child(4) { transform: rotate(157.5deg); }
-		#status-indeterminate > div:nth-child(5) { transform: rotate(202.5deg); }
-		#status-indeterminate > div:nth-child(6) { transform: rotate(247.5deg); }
-		#status-indeterminate > div:nth-child(7) { transform: rotate(292.5deg); }
-		#status-indeterminate > div:nth-child(8) { transform: rotate(337.5deg); }
+		#status-indeterminate>div:nth-child(1) {
+			transform: rotate(22.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(2) {
+			transform: rotate(67.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(3) {
+			transform: rotate(112.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(4) {
+			transform: rotate(157.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(5) {
+			transform: rotate(202.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(6) {
+			transform: rotate(247.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(7) {
+			transform: rotate(292.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(8) {
+			transform: rotate(337.5deg);
+		}
 
 		#status-notice {
 			margin: 0 100px;
@@ -113,14 +136,38 @@
 	</style>
 
 </head>
+
 <body>
 	<canvas id='canvas'>
 		HTML5 canvas appears to be unsupported in the current browser.<br />
 		Please try updating or use a different browser.
 	</canvas>
+	<h1 style="font-size: 3rem"><img
+			src="/public/images/project-thumbs/jb-banner.png"
+			alt="A Small Game About Juiceboxes"
+			style="width: 20rem; border-radius: 10px;"> - Browser Version</h1>
+	<p><span style="font-weight: bold">
+			Note: This is a <span
+				style="text-decoration: line-through">somewhat</span> janky port
+			of
+			a game developed and tested as a desktop executable.
+		</span> Things are probably
+		broken! Seems to work better
+		on Chrome/Edge over Firefox (which makes me sad). Rest assured that all
+		features have been rigorously tested by the QA team
+		(my younger brother) in the desktop distribution <a
+			href="https://lucien-eckert.itch.io/juicebox">available here.</a>
+	</p>
+	<p>Controls (Keyboard): WASD for directional input, SPACE/ESC
+		confirms/cancels in UI, mouse aims, LMB activates ability.</p>
+	<p><em>⚠ Some flashing lights/effects are present in this game.</em></p>
 	<div id='status'>
-		<div id='status-progress' style='display: none;' oncontextmenu='event.preventDefault();'><div id ='status-progress-inner'></div></div>
-		<div id='status-indeterminate' style='display: none;' oncontextmenu='event.preventDefault();'>
+		<div id='status-progress' style='display: none;'
+			oncontextmenu='event.preventDefault();'>
+			<div id='status-progress-inner'></div>
+		</div>
+		<div id='status-indeterminate' style='display: none;'
+			oncontextmenu='event.preventDefault();'>
 			<div></div>
 			<div></div>
 			<div></div>
@@ -133,14 +180,15 @@
 		<div id='status-notice' class='godot' style='display: none;'></div>
 	</div>
 
-	<script type='text/javascript' src='public/jb-browser-res/jb-browser.js'></script>
+	<script type='text/javascript'
+		src='public/jb-browser-res/jb-browser.js'></script>
 	<script type='text/javascript'>//<![CDATA[
 
 		var engine = new Engine;
 		var setStatusMode;
 		var setStatusNotice;
 
-		(function() {
+		(function () {
 
 			const MAIN_PACK = 'public/jb-browser-res/jb-browser.pck';
 			const INDETERMINATE_STATUS_STEP_MS = 100;
@@ -223,7 +271,7 @@
 			engine.setProgressFunc((current, total) => {
 
 				if (total > 0) {
-					statusProgressInner.style.width = current/total * 100 + '%';
+					statusProgressInner.style.width = current / total * 100 + '%';
 					setStatusMode('progress');
 					if (current === total) {
 						// wait for progress bar animation
@@ -256,6 +304,5 @@
 			}
 		})();
 	//]]></script>
-</body>
-</html>
 
+</html>
