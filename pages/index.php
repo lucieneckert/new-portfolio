@@ -39,7 +39,7 @@
                         <span>👀 Check out some projects I've worked on</span>
                     </a>
                     <a href="https://twitter.com/sprodsoft" class='projects-button' target="_blank">
-                        <span>🎮 Play something I've made</span>
+                        <span>🎮 Play something I made </span>
                     </a>
                     <a href="https://twitter.com/sprodsoft" class='projects-button' target="_blank">
                         <span>🡆 See what I'm currenly working on at SPRODSOFT</span>

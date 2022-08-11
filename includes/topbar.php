@@ -101,7 +101,7 @@
             escapePos = escapePositions[currentPositionIdx++ % 6]
             xbutton.setAttribute("style", `transform: translate(${escapePos})`);
             const text = document.getElementById("xbutton-text") 
-            text.innerHTML = escapeLabels[currentPositionIdx % 5];
+            text.innerHTML = escapeLabels[currentPositionIdx % 7];
             text.setAttribute("style", "animation: none");
             setTimeout(() => {
                 text.setAttribute("style", "animation-name: fade");

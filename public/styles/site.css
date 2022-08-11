@@ -502,6 +502,11 @@ blockquote {
     background-color: lightgrey;
 }
 
+.catalog {
+    position: relative;
+    padding: 0px;
+}
+
 .catalog .thumbnail {
     width: 150px;
     height: 150px;
@@ -509,30 +514,45 @@ blockquote {
     object-fit: cover;
     cursor: pointer;
     padding: 0px !important;
+    transition: 0.1s;
+}
+
+.catalog .thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.catalog-thumbnail-flex {
+    display: flex;
+    flex-direction: row;
 }
 
 .catalog .thumbnail img {
-    width: 100%;
+    width: 200%;
+    object-fit: cover;
 }
 
 .catalog .expanded {
     width: 1000px;
     height: 500px;
-    max-width: 90%;
 }
 
 .catalog .expanded img {
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     left: 0px;
     display: inline-block;
     margin: 0px auto;
     height: 500px;
-    max-width: 60%;
+    max-width: 650px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .catalog .expanded figcaption {
-    display: inline;
+    position: absolute;
+    display: block;
+    right: 0px;
+    width: 350px;
 }
 
 .catalog .thumbnail figcaption {
