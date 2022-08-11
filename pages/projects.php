@@ -31,7 +31,7 @@ $tools = exec_query($db, $tools_query)->fetchAll();
                     <div id='projects-filter-bar' class='box-card'>
                         <p>Filter</p>
                         <ul>
-                            <li class="filter-button" id='filter-all' onclick="filterProjects('all')">🌟 <br> All</li>
+                            <li class="filter-button" id='filter-all' onclick="filterProjects('all')" style="border: 2px solid grey">🌟 <br> All</li>
                             <li class="filter-button" id='filter-games' onclick="filterProjects('games')">🎲 <br> Games</li>
                             <li class="filter-button" id='filter-coding' onclick="filterProjects('coding')">🐛 <br> Coding</li>
                             <li class="filter-button" id='filter-music' onclick="filterProjects('music')">🎼 <br> Music</li>
@@ -47,10 +47,10 @@ $tools = exec_query($db, $tools_query)->fetchAll();
                     <div class='sideways-flex'>
                         <div class="featured-project-text">
                             <img src="public/images/project-thumbs/jb-banner.png" alt="A Small Game About Juiceboxes" class="featured-project-img">
-                            <p>My first solo game project made using Godot Engine. Developed over three months in quarantine, the focus of this project was to experiment with game "juice" (hence the name) and familiarize myself with the process of developing a game from start to finish.</p>
+                            <p>My first solo game project made using <a href="https://godotengine.org/">Godot Engine.</a> Developed over three months in quarantine, the focus of this project was to experiment with game "juice" (hence the name) and familiarize myself with the process of developing a game from start to finish.</p>
                             <div>
                             <a href="/jb-browser-ver" class='projects-button' target="_blank">
-                            <span>🎮 Play in-browser</span>
+                            <span>🎮 Play in Browser</span>
                             </a>
                             <a href="/view?project=jb" class='projects-button'>
                             <span>📄 Read more</span>

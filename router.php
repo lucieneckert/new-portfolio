@@ -27,4 +27,5 @@ switch ($request) {
         break;
     default:
         http_response_code(404);
+        require 'pages/404.php';
 }

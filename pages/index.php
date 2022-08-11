@@ -36,7 +36,10 @@
                 </div>
                 <div class='sideways-flex'>
                     <a href="/projects" class='projects-button'>
-                        <span>🡆 Okay, just show me some projects already</span>
+                        <span>👀 Check out some projects I've worked on</span>
+                    </a>
+                    <a href="https://twitter.com/sprodsoft" class='projects-button' target="_blank">
+                        <span>🎮 Play something I've made</span>
                     </a>
                     <a href="https://twitter.com/sprodsoft" class='projects-button' target="_blank">
                         <span>🡆 See what I'm currenly working on at SPRODSOFT</span>
