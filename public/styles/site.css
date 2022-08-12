@@ -530,12 +530,12 @@ blockquote {
 }
 
 .catalog .thumbnail img {
-    width: 200%;
+    height: 100%;
     object-fit: cover;
+    transform: translate(-20%, 0%);
 }
 
 .catalog .expanded {
-    width: 1000px;
     height: 500px;
 }
 
@@ -546,7 +546,6 @@ blockquote {
     display: inline-block;
     margin: 0px auto;
     height: 500px;
-    max-width: 650px;
     object-fit: cover;
     border-radius: 10px;
 }

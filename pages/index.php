@@ -38,7 +38,7 @@
                     <a href="/projects" class='projects-button'>
                         <span>👀 Check out some projects I've worked on</span>
                     </a>
-                    <a href="https://twitter.com/sprodsoft" class='projects-button' target="_blank">
+                    <a href="/jb-browser-ver" class='projects-button' target="_blank">
                         <span>🎮 Play something I made </span>
                     </a>
                     <a href="https://twitter.com/sprodsoft" class='projects-button' target="_blank">
