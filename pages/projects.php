@@ -65,6 +65,9 @@ $tools = exec_query($db, $tools_query)->fetchAll();
                     ?>
                         <a href="view?project=<?php echo $project['page_url'] ?>" class='project-card box-card project-<?php echo $project['type']?>'>
                             <img class='project-card-banner' src="public/images/project-thumbs/<?php echo $project['thumbnail_path'] ?>" alt="" />
+                            <?php if ($project['in_progress'] == 1) {
+                                ?> <p class='in-progress'>⌛ In Progress</p> <?php
+                            } ?>
                             <h3><?php echo $project['name'] ?></h3>
                             <ul class='tools-list'>
                                 <?php

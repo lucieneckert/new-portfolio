@@ -2,7 +2,8 @@ CREATE TABLE projects (
     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
     name TEXT NOT NULL UNIQUE,
     thumbnail_path TEXT NOT NULL UNIQUE,
-    page_url TEXT NOT NULL UNIQUE
+    page_url TEXT NOT NULL UNIQUE,
+    in_progress INTEGER
 );
 
 CREATE TABLE categories (
@@ -57,13 +58,13 @@ VALUES
     ('PHP')
 ;
 -- game dev
-INSERT INTO projects (name, thumbnail_path, page_url) 
+INSERT INTO projects (name, thumbnail_path, page_url, in_progress) 
 VALUES 
-    ('Ragdoll Royale', 'ragdoll.png', 'rr'),
-    ('Springs with Guns', 'springs.png', 'swg'),
-    ('Enjoyable Block Game', 'blocks.png', 'ebg'),
-    ('A Small Game About Juiceboxes', 'juiceboxes.png', 'jb'),
-    ('Parole in One', 'golf.png', 'pio')
+    ('Ragdoll Royale', 'ragdoll.png', 'rr', 0),
+    ('Springs with Guns', 'springs.png', 'swg', 1),
+    ('Enjoyable Block Game', 'blocks.png', 'ebg', 0),
+    ('A Small Game About Juiceboxes', 'juiceboxes.png', 'jb', 0),
+    ('Parole in One', 'golf.png', 'pio', 0)
 ;
 INSERT INTO project_categories (project_id, category_id) VALUES (1, 1), (2, 1), (3, 1), (4, 1), (5, 1);
 INSERT INTO project_tools (project_id, tool_id)
@@ -75,11 +76,11 @@ VALUES
     (5, 1), (5, 2), (5, 3)
 ;
 -- coding projects
-INSERT INTO projects (name, thumbnail_path, page_url)
+INSERT INTO projects (name, thumbnail_path, page_url, in_progress)
 VALUES 
-    ('GAN Pokemon Sprite Tuning', 'pokemon.png', 'pokegan'),
-    ('CamlClimbers: Tetris variant in OCaml', 'camls.png', 'caml-climbers'),
-    ('Random Mystery Dungeon Generator', 'dungeons.png', 'random-md')
+    ('GAN Pokemon Sprite Tuning', 'pokemon.png', 'pokegan', 1),
+    ('CamlClimbers: Tetris variant in OCaml', 'camls.png', 'caml-climbers', 0),
+    ('Random Mystery Dungeon Generator', 'dungeons.png', 'random-md', 1)
 ;
 INSERT INTO project_categories (project_id, category_id) VALUES (6, 2), (7, 2), (8, 2);
 INSERT INTO project_tools (project_id, tool_id)
@@ -89,18 +90,18 @@ VALUES
     (8, 10)
 ;
 -- web dev
-INSERT INTO projects (name, thumbnail_path, page_url)
+INSERT INTO projects (name, thumbnail_path, page_url, in_progress)
 VALUES 
-    ('Misc. Web Dev Projects', 'webdev.png', 'webdev')
+    ('Misc. Web Dev Projects', 'webdev.png', 'webdev', 0)
 ;
 INSERT INTO project_categories (project_id, category_id) VALUES (9, 3);
 INSERT INTO project_tools (project_id, tool_id) VALUES (9, 14), (9, 15), (9, 16);
 -- music
-INSERT INTO projects (name, thumbnail_path, page_url)
+INSERT INTO projects (name, thumbnail_path, page_url, in_progress)
 VALUES 
-    ('Ragdoll Royale OST', 'rr-ost.png', 'rr-ost'),
-    ('A Small Game About Juiceboxes OST', 'jb-ost.png', 'jb-ost'),
-    ('Parole in One OST', 'pio-ost.png', 'pio-ost')
+    ('Ragdoll Royale OST', 'rr-ost.png', 'rr-ost', 0),
+    ('A Small Game About Juiceboxes OST', 'jb-ost.png', 'jb-ost', 0),
+    ('Parole in One OST', 'pio-ost.png', 'pio-ost', 0)
 ;
 INSERT INTO project_categories (project_id, category_id) VALUES (10, 4), (11, 4), (12, 4);
 INSERT INTO project_tools (project_id, tool_id)
