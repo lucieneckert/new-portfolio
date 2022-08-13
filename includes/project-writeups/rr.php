@@ -6,6 +6,11 @@
         <li>GIMP</li>
     </ul>
 </section>
+
+<p style="font-weight: bold;">
+    🚧 This page is currently under construction, but will be updated later!
+</p>
+
 <p>
     Ragdoll Royale was a project I worked on for <a href="https://classes.cornell.edu/browse/roster/SP22/class/INFO/4152">INFO 4152: Advanced Game Development</a>.
     The game was written in C++ using the course's in-house CUGL engine. I worked on both design and programming tasks for this project, centralizing my
@@ -35,13 +40,6 @@
     behavior or theme that ended up making games feel vastly different on each stage.
 </p>
 
-<div class='project-info-gallery'>
-    <figure><img src="public/project-info-res/rr/screenshot-draw.png" alt="draw your path to victory!"></figure>
-    <figure><img src="public/project-info-res/rr/screenshot-objects.png" alt="weaponize a variety of objects, even yourself"></figure>
-    <figure><img src="public/project-info-res/rr/screenshot-stages.png" alt="battle it out across distinct stages"></figure>
-    <figure><img src="public/project-info-res/rr/screenshot-online.png" alt="settle the score online with friends"></figure>
-</div>
-
 <h2>Audio</h2>
 
 <p>
@@ -60,8 +58,4 @@
     Alongside composition, I was also in charge of implementing all of the audio systems in our game. I hadn't worked with game audio on such a low level before, managing slots
     and audio graph nodes and such in efficient ways (not to mention the learning curve of C++ continuing to surprise me.  It was extremely satisfying when things clicked into place and we ended up
     with a pretty a smooth aural experience that wasn't going to blow out anyone's speakers.  
-</p>
-
-<p>
-    This page is currently under construction, but will be updated later!
 </p>

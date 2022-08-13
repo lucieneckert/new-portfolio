@@ -61,8 +61,8 @@ VALUES
 INSERT INTO projects (name, thumbnail_path, page_url, in_progress) 
 VALUES 
     ('Ragdoll Royale', 'ragdoll.png', 'rr', 0),
-    ('Springs with Guns', 'springs.png', 'swg', 1),
     ('Enjoyable Block Game', 'blocks.png', 'ebg', 0),
+    ('Springs with Guns', 'springs.png', 'swg', 1),
     ('A Small Game About Juiceboxes', 'juiceboxes.png', 'jb', 0),
     ('Parole in One', 'golf.png', 'pio', 0)
 ;

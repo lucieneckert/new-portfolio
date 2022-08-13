@@ -34,17 +34,20 @@
                         Welcome to my portfolio!
                     </p>
                 </div>
-                <div class='sideways-flex'>
-                    <a href="/projects" class='projects-button'>
-                        <span>👀 Check out some projects I've worked on</span>
-                    </a>
-                    <a href="/jb-browser-ver" class='projects-button' target="_blank">
-                        <span>🎮 Play something I made </span>
-                    </a>
-                    <a href="https://twitter.com/sprodsoft" class='projects-button' target="_blank">
-                        <span>🡆 See what I'm currenly working on at SPRODSOFT</span>
-                    </a>
-                </div>
+                <section id='quick-links'>
+                    <h2 style="margin: 0px;"> <img style="margin-left: 1rem;" src="public/images/icons/rightarrow.png" alt=""> Click here to...</h2>
+                    <div class='sideways-flex'>
+                        <a href="/projects" class='projects-button'>
+                            <span>👀 Check out some projects I've worked on</span>
+                        </a>
+                        <a href="/jb-browser-ver" class='projects-button' target="_blank">
+                            <span>🎮 Quickly play something I made </span>
+                        </a>
+                        <a href="https://twitter.com/sprodsoft" class='projects-button' target="_blank">
+                            <span>🡆 See what I'm currenly working on at SPRODSOFT</span>
+                        </a>
+                    </div>
+                </section>
             </article>
             <div>
                 <section class='box-card resume'>
