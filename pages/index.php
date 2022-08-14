@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/styles/site.css">
     <link rel="shortcut icon" href="public/favicon.ico">
-    <title>Index</title>
+    <title>Index - leckert.dev</title>
 </head>
 
 <body>
@@ -32,19 +32,21 @@
                         in May 2023 through <a href="https://infosci.cornell.edu/undergraduate/early-admit-mps">Cornell's early admit program.</a>
                         In my free time, I work to develop games either solo or with a few friends.
                         Welcome to my portfolio!
+                        <br>
+                        <br>
+                        <span style="font-weight: bold;"> <img src="public/images/icons/rightarrow.png" alt=""> Click the buttons below to:</span>
                     </p>
                 </div>
                 <section id='quick-links'>
-                    <h2 style="margin: 0px;"> <img style="margin-left: 1rem;" src="public/images/icons/rightarrow.png" alt=""> Click here to...</h2>
                     <div class='sideways-flex'>
                         <a href="/projects" class='projects-button'>
                             <span>👀 Check out some projects I've worked on</span>
                         </a>
                         <a href="/jb-browser-ver" class='projects-button' target="_blank">
-                            <span>🎮 Quickly play something I made </span>
+                            <span>🎮 Quickly play a game I made </span>
                         </a>
                         <a href="https://twitter.com/sprodsoft" class='projects-button' target="_blank">
-                            <span>🡆 See what I'm currenly working on at SPRODSOFT</span>
+                            <span>🐟 See what I'm currenly working on at SPRODSOFT</span>
                         </a>
                     </div>
                 </section>

@@ -12,7 +12,7 @@ $project = exec_query_params($db, "SELECT * FROM projects WHERE (page_url = :pro
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/styles/site.css">
     <link rel="shortcut icon" href="public/favicon.ico">
-    <title><?php echo $project['name'] ?></title>
+    <title><?php echo $project['name'] ?> - leckert.dev</title>
 </head>
 
 <body>

@@ -15,7 +15,7 @@ $tools = exec_query($db, $tools_query)->fetchAll();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/styles/site.css">
     <link rel="shortcut icon" href="public/favicon.ico">
-    <title>Projects</title>
+    <title>Projects - leckert.dev</title>
 </head>
 
 <body>
