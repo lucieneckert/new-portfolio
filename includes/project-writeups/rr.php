@@ -1,5 +1,6 @@
 <h2 class='project-title'>Ragdoll Royale</h2>
 <section class='project-info-summary'>
+    <p>May 2022</p>
     <ul class='tools-list'>
         <li>C++</li>
         <li>Ableton</li>
@@ -22,7 +23,7 @@
 
 <p>
     Our game was best described as a turn-based drawing/fighting game, supporting up to four player networked multiplayer where each player controls a ragdoll, battling to be the last one standing. The gist of the gameplay is that on a player's turn, they can expend ink to draw paths within a limited radius that, upon the end of the turn, drag and fling objects along themselves.
-    Through this, players can throw objects and characters around the map, whittling away at opponent's health by setting up collisions or planning ahead for combos and chain reactions.
+    Through this, players can throw objects and characters around the map, whittling away at opponents' health by setting up collisions or planning ahead for combos and chain reactions.
 </p>
 
 <p>
@@ -39,15 +40,16 @@
 
 <h2>Level Design</h2>   
 
-<p>Our game's final release contained 10 stages. In hindsight, it would have been wise to focus on quality over quantity over quality, 
-    especially as our game's stages are could be expected to be replayable due to our multiplayer gameplay. Regardless, each stage was
+<p>Our game's final release contained ten stages. In hindsight, it would have been wise to focus on quality over quantity over quality, 
+    especially as our game's stages are expected to be replayable due to our multiplayer gameplay. At the cost of quite a few hours of sleep, we pulled off ten anyway. 
+    Each stage was
     constructed from design patterns we identified during early playtesting (both planned and emergent) and centered around a specific
     behavior or theme that ended up making games feel vastly different on each. Below are some screenshots of our level designs in Tiled and in-game.
 </p>
 
 <div class='project-info-gallery'> 
     <figure>
-        <img src="public/project-info-res/rr/stage0.png" alt="">
+        <img src="public/project-info-res/rr/stage0.png" alt="screenshot of symmetrical stage in Tiled">
         <figcaption>One of our more basic maps gave players comfortable enough starting positions (spawn points here are denoted by the white circles).
         However, it is advantageous for them to move towards the center if
         they wanted to control powerful spawned objects in range of their drawing radius. In many stages like this one, there's a theme of
@@ -58,7 +60,7 @@
         objects into those who linger above.</figcaption>
     </figure>
     <figure>
-        <img src="public/project-info-res/rr/stage1.png" alt="">
+        <img src="public/project-info-res/rr/stage1.png" alt="screenshot of pachinko themed stage in Tiled">
         <figcaption>One problem we quickly identified with our game is the tendency for objects to gravitate towards the bottom of the stage.
         To combat this, one of our stages was designed like a pachinko machine -- here, there are "stage lines" (lines similar to
         the ones drawn by players that stay static in the stage) that flow from the bottom and up each side, flinging objects that
@@ -67,7 +69,7 @@
         points of entry into the contraption, which provided enough variation to seem "random" when objects came in with different momentum.</figcaption>
     </figure>
     <figure>
-        <img src="public/project-info-res/rr/stage3.png" alt="">
+        <img src="public/project-info-res/rr/stage3.png" alt="screenshot of vertical bookshelf-themed stage in-game">
         <figcaption>Some of our levels were more vertical. Leaning into this, this level creates a king-of-the-hill type game where players
             scramble to climb upwards towards more defended and object-plentiful positions. In the center of the bottom level is a single bomb
             spawner that lower players can use to take potshots towards those climbing above, higher players can detonate with their objects on impact
@@ -76,7 +78,7 @@
         </figcaption>
     </figure>
     <figure>
-        <img src="public/project-info-res/rr/stage2.png" alt="Screenshot of stage in-game.">
+        <img src="public/project-info-res/rr/stage2.png" alt="Screenshot of divided-halves stage in-game.">
         <figcaption>This stage was unique in the sense that it contained two distinct halves (conveyed to the player though different 
             lighting). Each half is separated by a filter of solid ground that allows crates and bombs to pass through, but not players --
             letting each half attack the other. Players had the option of 1v1ing the other player in their half, or working together to take
@@ -105,7 +107,7 @@ those for the level decor, and invisible walls.
 </p>
 
 <p>
-    Alongside composition, I was also in charge of implementing all of the audio systems in our game. I hadn't worked with game audio on such a low level before, managing slots
-    , effects, and audio graph nodes and such in efficient ways. Getting over the intial hump of C++'s learning curve in general was also a challenging task. It was extremely satisfying when things clicked into place, and we ended up
+    Alongside composition, I was also in charge of implementing all the audio systems in our game. I hadn't worked with game audio on such a low level before, managing slots
+    , effects, and audio graph nodes and such in efficient ways. Getting over the initial hump of C++'s learning curve in general was also a challenging task. It was extremely satisfying when things clicked into place, and we ended up
     with a pretty a smooth aural experience that wasn't going to blow out anyone's speakers.  
 </p>

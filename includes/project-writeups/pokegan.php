@@ -28,7 +28,7 @@
 
 <p>My initial attempts were somewhat lacking -- only having access to my laptop, training took a decent bit of
     time. After a few hundred epochs, the Generator was producing output like this:</p>
-<img src="public/project-info-res/pgan/500epoch-highLR.png" alt="nebulous multicolored blobs barely representing pokemon">
+<img class='project-img' src="public/project-info-res/pgan/500epoch-highLR.png" alt="nebulous multicolored blobs barely representing pokemon">
 <p>While the general form had begun to emerge, edges were fuzzy and certain features were far more prominent
     than they should be
     (one Pokemon present in the training data has seven forms and thus seven times the entries of any other, so
@@ -39,7 +39,7 @@
     generated output collapsed into the following consistent noise:
 </p>
 
-<img src="public/project-info-res/pgan/600epoch-highLR.png" alt="basically just rainbow noise">
+<img class='project-img' src="public/project-info-res/pgan/600epoch-highLR.png" alt="basically just rainbow noise">
 
 <p>Another issue was that the PyTorch tutorial didn't support
     images
@@ -66,11 +66,11 @@
 <p>Now, the network was producing forms with clearer edges and expected features (limb-like protrusions) than
     before. As it evolved, it was interesting to see that it first learned to create a shape with little color
     variation, and then
-    moved on to fleshing out the colors in later epochs. By 800 epochs, they begun to really resemble Pokemon
+    moved on to fleshing out the colors in later epochs. By 800 epochs, they began to really resemble Pokemon
     sprites (especially if you squint), albeit with noisy color palettes.
 </p>
 
-<img src="public/project-info-res/pgan/the-boy.png" alt="the boy (my favorite generation)">
+<img class='project-img' src="public/project-info-res/pgan/the-boy.png" alt="the boy (my favorite generation)">
 
 <p><em>Next Steps:</em>
 <ul>

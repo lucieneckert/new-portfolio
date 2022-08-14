@@ -69,7 +69,7 @@
 </div>
 
 <p>Compared to other projects where the sound design had to more strictly adhere
-    to a theme, the more abstract "setting" of this game let me experiement more with
+    to a theme, the more abstract "setting" of this game let me experiment more with
     making sounds that had the primary focus of just sounding good. I still have a long
     way to go as a composer, but I enjoyed having that freedom when making the background
     tracks and really tried to make them varied enough such that they don't get old --
