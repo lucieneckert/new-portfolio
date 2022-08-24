@@ -18,6 +18,10 @@
     players need to strategize and hone their navigational skill to survive the specific events, conditions, and race course of each unique match.
 </p>
 
+<p>Within this project, I'm responsible for 3D modeling, texture work, and both gameplay and UI programming. Some specific features I've worked on so far include the gamemode logic,
+    vehicle abilities, entity spawning behavior, player HUD (we love the observer pattern), and dismounted player movement. I'm also starting to maintain the Twitter account. 
+</p>
+
 <img src="public/project-info-res/sk/city.png" alt="early screenshot of the main city region, with a forest and caves visible in the background" class='project-img' />
 
 <h2>Gameplay</h2>
