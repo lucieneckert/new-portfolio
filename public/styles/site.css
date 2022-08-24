@@ -23,6 +23,7 @@ body {
     background-color: white;
     filter: drop-shadow(10px 10px 0px grey);
     border: 1px solid grey;
+    height: fit-content;
 
 }
 
@@ -35,19 +36,6 @@ h1 {
 span.version-subtitle {
     font-size: 0.4em;
     color: lightslategrey;
-}
-
-/* cat gallery */
-
-.cat-gallery {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.cat-gallery img {
-    max-width: 33%;
-    object-fit: cover;
-    flex-grow: 1fr;
 }
 
 /* nav */

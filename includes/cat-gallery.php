@@ -11,6 +11,7 @@
     const imgElements = new Array(NUM_SEED_IMAGES + 1).fill().map(() => {
         const img = document.createElement('img')
         img.src = getCatPhoto();
+        img.alt = 'cat photo'
         return img
     })
     let imgPos = 0
@@ -53,14 +54,15 @@
         animation-fill-mode: both;
         animation-direction: alternate;
         animation-iteration-count: 2;
+        max-width: 30%;
     }
 
     .top {
-        animation-name: 'open-top';
+        animation-name: open-top;
     }
 
     .side {
-        animation-name: 'open-side';
+        animation-name: open-side;
     }
 
     @keyframes open-top {
