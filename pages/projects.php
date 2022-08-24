@@ -25,11 +25,10 @@ $tools = exec_query($db, $tools_query)->fetchAll();
     </header>
     <section class='main'>
         <h1>Projects</h1>
-        <div class=' sideways-flex'>
-            <div>
+        <div class='sideways-flex'>
+            <div id='sticky-filter-sidebar'>
                 <div style="position: sticky; top: 1rem">
                     <div id='projects-filter-bar' class='box-card'>
-                        <p>Filter</p>
                         <ul>
                             <li class="filter-button" id='filter-all' onclick="filterProjects('all')" style="border: 2px solid grey">🌟 <br> All</li>
                             <li class="filter-button" id='filter-games' onclick="filterProjects('games')">🎲 <br> Games</li>
@@ -38,23 +37,23 @@ $tools = exec_query($db, $tools_query)->fetchAll();
                             <li class="filter-button" id='filter-web' onclick="filterProjects('web')">🖥️ <br> Web</li>
                         </ul>
                     </div>
-                    <img src="public/images/icons/rightarrow.png" class="filter-indicator"/>
+                    <img src="public/images/icons/rightarrow.png" class="filter-indicator" />
                 </div>
             </div>
-        <div>
-            <div class='featured-project' style="min-width: 40%;">
-                <h2 class='featured-project-title'>Featured Project</h2>
+            <div>
+                <div class='featured-project' style="min-width: 40%;">
+                    <h2 class='featured-project-title'>Featured Project</h2>
                     <div class='sideways-flex'>
                         <div class="featured-project-text">
                             <img src="public/images/project-thumbs/jb-banner.png" alt="A Small Game About Juiceboxes" class="featured-project-img">
                             <p>My first solo game project made using <a href="https://godotengine.org/">Godot Engine.</a> Developed over three months in quarantine, the focus of this project was to experiment with game "juice" (hence the name) and familiarize myself with the process of developing a game from start to finish.</p>
                             <div>
-                            <a href="/jb-browser-ver" class='projects-button' target="_blank">
-                            <span>🎮 Play in Browser</span>
-                            </a>
-                            <a href="/view?project=jb" class='projects-button'>
-                            <span>📄 Read more</span>
-                            </a>
+                                <a href="/jb-browser-ver" class='projects-button' target="_blank">
+                                    <span>🎮 Play in Browser</span>
+                                </a>
+                                <a href="/view?project=jb" class='projects-button'>
+                                    <span>📄 Read more</span>
+                                </a>
                             </div>
                         </div>
                         <video src="public/project-info-res/jb/jb-trailer.mp4" controls class="featured-project-vid"></video>
@@ -63,21 +62,23 @@ $tools = exec_query($db, $tools_query)->fetchAll();
                 <div class='spacious-flex'>
                     <?php foreach ($projects as $project) {
                     ?>
-                        <a href="view?project=<?php echo $project['page_url'] ?>" class='project-card box-card project-<?php echo $project['type']?>'>
+                        <a href="view?project=<?php echo $project['page_url'] ?>" class='project-card box-card project-<?php echo $project['type'] ?>'>
                             <img class='project-card-banner' src="public/images/project-thumbs/<?php echo $project['thumbnail_path'] ?>" alt="" />
                             <?php if ($project['in_progress'] == 1) {
-                                ?> <p class='in-progress'>⌛ In Progress</p> <?php
-                            } ?>
-                            <h3><?php echo $project['name'] ?></h3>
-                            <ul class='tools-list'>
-                                <?php
-                                foreach ($tools as $tool) {
-                                    if ($tool['projects.id'] == $project['id']) {
-                                ?> <li> <?php echo $tool['tools.name'] ?> </li> <?php
+                            ?> <p class='in-progress'>⌛ In Progress</p> <?php
+                                                                    } ?>
+                            <div>
+                                <h3><?php echo $project['name'] ?></h3>
+                                <ul class='tools-list'>
+                                    <?php
+                                    foreach ($tools as $tool) {
+                                        if ($tool['projects.id'] == $project['id']) {
+                                    ?> <li> <?php echo $tool['tools.name'] ?> </li> <?php
+                                                                                }
                                                                             }
-                                                                        }
-                                                                                ?>
-                            </ul>
+                                                                                    ?>
+                                </ul>
+                            </div>
                         </a>
                     <?php } ?>
                 </div>

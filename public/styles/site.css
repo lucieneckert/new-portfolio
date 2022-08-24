@@ -8,7 +8,7 @@
 
 
 html {
-    background: #6600FF  url('/public/images/blurry-gradient-haikei.png') no-repeat center center fixed;
+    background: #6600FF url('/public/images/blurry-gradient-haikei.png') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Atkinson Hyperlegible', sans-serif;
 }
@@ -118,6 +118,14 @@ nav a {
     opacity: 0.4;
 }
 
+@media screen and (max-width: 700px) {
+
+    nav li {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+}
 /* flex boxes */
 
 .sideways-flex {
@@ -129,6 +137,11 @@ nav a {
     flex-direction: column;
 }
 
+@media screen and (max-width: 800px) {
+    .sideways-flex {
+        flex-wrap: wrap;
+    }
+}
 /* index page elements */
 
 .index-desc {
@@ -270,7 +283,7 @@ nav a {
     animation-iteration-count: infinite;
 }
 
-/* Project grid stuff */
+/* Project grid, filter stuff */
 #projects-filter-bar {
     display: inline-block;
     width: 5rem;
@@ -409,6 +422,9 @@ nav a {
     overflow: hidden;
     transition: 0.2s;
     text-decoration: none;
+    display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
 }
 
 .project-card h3 {
@@ -422,11 +438,46 @@ nav a {
     font-size: 0.8em;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .project-card {
-        max-width: 80%;
-        width: 70%;
-        height: 350px;
+        width: 80%;
+            flex-direction: row;
+            padding: 0px;
+        }
+        
+        .filter-indicator {
+            display: none;
+        }
+        
+        .project-card-banner {
+            height: 100%;
+            width: 60%;
+            object-fit: cover;
+            margin: 0px;
+            margin-right: 1rem;
+        }
+        
+        #projects-filter-bar {
+            width: 90%;
+            margin: 1rem;
+        }
+        
+        #projects-filter-bar ul {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #projects-filter-bar li {
+            display: inline-block;
+        }
+        
+        #sticky-filter-sidebar {
+            width: 100%;
+        }
+        
+        .featured-project-vid {
+            width: 100%;
+            margin-top: 1rem;
     }
 }
 
@@ -623,7 +674,7 @@ blockquote {
         padding: 2px;
         width: 100%;
     }
-    
+
     .project-img {
         max-width: 600px;
     }
