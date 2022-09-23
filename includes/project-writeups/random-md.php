@@ -86,7 +86,17 @@ The system could then produce outputs such as these:
     <figure><img src="public/project-info-res/rmd/initial-1.png" alt=""></figure>
 </div>
 
-<p><em>Next Steps:</em> Generate and use more appropriate tilesets, etc.</p>
+<p>I then used a simple algorithm to add "resolution" to the walls, determining which wall tile to place where based on whether or not
+    and in what way they were adjacent to the ground.
+</p>
+
+<div class='project-info-gallery'>
+    <figure><img src="public/project-info-res/rmd/layouts.png" alt="Some larger layouts, with higher resolution walls">
+        <figcaption>Some example layouts with the higher wall resolution. Starts to somewhat resemble the look I'm going for. </figcaption>
+    </figure>
+</div>
+
+<p>Now, I need to find a way to replace the placeholder/testing tileset before I get used to it. </p>
 
 <h2>Steps 3-n: TBD</h2>
 
@@ -95,6 +105,9 @@ The system could then produce outputs such as these:
         Create character sprites to populate the dungeons
     </li>
     <li>
-        Create Twitter bot to post output of the system
+        Generate random tilesets using a GAN (Debatable)
+    </li>
+    <li>
+        Create Twitter bot to periodically post output of the system
     </li>
 </ol>

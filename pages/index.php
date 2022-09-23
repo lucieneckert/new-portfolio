@@ -19,7 +19,7 @@
         <div class='sideways-flex'>
             <article class='index-desc'>
                 <div class='sideways-flex'>
-                    <img src="public/images/self.jpg" alt="selfie, with cat" style="height: 200px; padding: 20px;">
+                    <img class='self-picture' src="public/images/self.jpg" alt="selfie, with cat" >
                     <p>
                         <em class="bold-paragraph-title">
                             Hi! I'm Lucien, a fourth-year student studying at the College of
