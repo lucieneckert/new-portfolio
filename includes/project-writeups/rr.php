@@ -38,9 +38,38 @@
     <figure><img src="public/project-info-res/rr/screenshot-online.png" alt="settle the score online with friends"></figure>
 </div>
 
+<h2>Design Process</h2>
+
+<p>Early in development, we put together a paper prototype for our game. We wanted to analyze how players valued the risk of exposure to others against the
+    reward of being in close proximity to "power-ups" or useful items. We modeled this dilemma using a three tile-based maps of increasing difficulty (using the increasing size and complexity
+    of each to model this variable through giving players both more choices of strategies, and presenting more dangerous locations paired with greater rewards). 
+</p>
+
+<div class='project-info-gallery'>
+    <figure><img src="public/project-info-res/rr/nondigital.jpg" alt="Picture of our nondigital prototype.">
+        <figcaption>Picture of our medium map. Even though our game is a sidescroller, we modeled it in a top-down tile-based format to
+            remove the need for a physics analogue and put more focus on planning rather than execution. Each player has their own token, and 
+            can manipulate pennies within a fixed distance in order to deal damage and threaten opponents. 
+        </figcaption>
+</figure>
+<figure><img src="public/project-info-res/rr/nondigital-prog.png" alt="Picture of our nondigital prototype in progress.">
+        <figcaption>Our non-digital prototype in development. Involved many paper scraps. All three maps are visible. 
+        </figcaption>
+</figure>
+
+</div>
+
+<p>We found that it was tough to encourage players to go for the most valuable power ups in the context of even a little risk. It may just be that 
+    players didn't feel confident weighing that option as they weren't fully adjusted to playing the game, but the dominant strategy tended to be
+    finding ways to minimize risk first and then figure out how to use nearby lower-value objects to maximize damage against enemies. Since we were 
+    presenting our game at a fast-paced showcase event, we learned that we needed a way to entice new players to put themselves into riskier positions
+    in order to present as much of our game as possible to as many people as possible. Generally, this was the question we sought to answer with future
+    digital prototypes.  
+</p>
+
 <h2>Level Design</h2>   
 
-<p>Our game's final release contained ten stages. In hindsight, it would have been wise to focus on quality over quantity over quality, 
+<p>Our game's final release contained ten stages. In hindsight, it would have been wise to focus on quality over quantity, 
     especially as our game's stages are expected to be replayable due to our multiplayer gameplay. At the cost of quite a few hours of sleep, we pulled off ten anyway. 
     Each stage was
     constructed from design patterns we identified during early playtesting (both planned and emergent) and centered around a specific

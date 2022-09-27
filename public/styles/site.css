@@ -9,6 +9,7 @@
 
 html {
     background: #6600FF url('/public/images/blurry-gradient-haikei.png') no-repeat center center fixed;
+    image-rendering: crisp-edges;
     background-size: cover;
     font-family: 'Atkinson Hyperlegible', sans-serif;
 }
@@ -31,6 +32,11 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 5em;
     margin: 10px 0px;
+    /* background-color: black; */
+    /* color: white; */
+    padding: 1.25rem;
+    border-radius: 2rem;
+    width: fit-content;
 }
 
 span.version-subtitle {
@@ -45,10 +51,6 @@ span.version-subtitle {
     height: 100px;
     margin: 10px;
     margin-top: 15px;
-}
-
-nav ul {
-    margin-left: -30px;
 }
 
 
@@ -108,9 +110,24 @@ nav a {
 
 @media screen and (max-width: 700px) {
 
+    nav {
+        width: 100%;
+    }
+    
+    nav img {
+        margin: 0rem auto;
+    }
+
     nav li {
-        width: 90%;
-        margin: 0px auto;
+        width: 100%;
+        margin: 0rem auto;
+        border-radius: 0rem;
+        text-align: center;
+    }
+
+    nav ul {
+        width: 100%;
+        margin-left: -60px;
     }
 
 }
@@ -125,32 +142,38 @@ nav a {
     flex-direction: column;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .sideways-flex {
         flex-wrap: wrap;
+    }
+
+    .other-elements {
+        width: 100%;
     }
 }
 /* index page elements */
 
-.index-desc {
-    min-width: 600px;
-}
 
 .link-list {
     list-style: "";
+    display: flex;
+    margin-left: -30px;
 }
 
 .link-list li {
-    border-radius: 10px;
-    padding: 5px 10px;
-    margin: 5px;
-    margin-left: -40px;
-    border: 2px solid black;
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 10px 10px;
+    margin: 10px;
+    background-color: whitesmoke;
     transition: 0.1s;
+    border: 2px solid #2b2b2b;
+    filter: drop-shadow(5px 5px 0px grey);
 }
 
 .link-list li:hover {
     background-color: #ebebeb;
+    transform: scale(1.05);
 }
 
 .link-list a {
@@ -169,7 +192,7 @@ nav a {
 }
 
 .link-icon {
-    width: 1.25em;
+    width: 2rem;
     margin: 0px 5px;
     filter: brightness(0%);
 }
@@ -185,16 +208,17 @@ nav a {
 }
 
 .projects-button {
-    font-family: 'Raleway', sans-serif;
     display: inline-block;
-    padding: 10px 10px;
     margin: 20px;
     text-decoration: none;
-    font-size: 1.25em;
-    font-weight: bold;
-    border: 3px solid black;
+    filter: drop-shadow(5px 5px 0px grey);
+    border: 2px solid black;
     border-radius: 10px;
-    color: black;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2b2b2b;
+    background: #ebebeb;
     transition: 0.1s;
 }
 
@@ -317,10 +341,9 @@ nav a {
 
 }
 
-.spacious-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .featured-project {
@@ -334,10 +357,8 @@ nav a {
 
 .featured-project .projects-button {
     font-size: 1.25em;
-    padding: 5px;
-    margin: 0px 5px;
+    margin: 0px 10px;
     color: black;
-    background-color: white;
 }
 
 .featured-project-title {
@@ -363,7 +384,7 @@ nav a {
 .project-card-banner {
     display: block;
     height: 150px;
-    width: 20rem;
+    width: 125%;
     margin-left: -2.5rem;
     margin-top: -10%;
     object-fit: cover;
@@ -426,47 +447,13 @@ nav a {
     font-size: 0.8em;
 }
 
-@media (max-width: 800px) {
-    .project-card {
-        width: 80%;
-            flex-direction: row;
-            padding: 0px;
-        }
-        
-        .filter-indicator {
-            display: none;
-        }
-        
-        .project-card-banner {
-            height: 100%;
-            width: 60%;
-            object-fit: cover;
-            margin: 0px;
-            margin-right: 1rem;
-        }
-        
-        #projects-filter-bar {
-            width: 90%;
-            margin: 1rem;
-        }
-        
-        #projects-filter-bar ul {
-            display: flex;
-            flex-direction: row;
-        }
-        
-        #projects-filter-bar li {
-            display: inline-block;
-        }
-        
-        #sticky-filter-sidebar {
-            width: 100%;
-        }
-        
-        .featured-project-vid {
-            width: 100%;
-            margin-top: 1rem;
-    }
+#index-projects a {
+    width: 30%;
+    height: 300px;
+}
+
+#index-projects a .project-card-banner {
+    height: 200px;
 }
 
 .project-card .in-progress {
@@ -643,13 +630,16 @@ blockquote {
     padding: 20px;
 }
 
+/* tablet */
+
 @media (max-width: 1000px) {
-    .project-info-gallery video {
-        width: 150%;
-    }
 
     .self-picture {
         display: none;
+    }
+
+    .project-info-gallery figure img {
+        max-width: 100%;
     }
 
     .project-info-gallery .small {
@@ -672,7 +662,73 @@ blockquote {
         width: 100%;
     }
 
-    .project-img {
-        max-width: 600px;
+    .project-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-card {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .project-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        width: 100% !important;
+            flex-direction: row;
+            padding: 0px;
+            height: 200px !important;
+        }
+        
+        .filter-indicator {
+            display: none;
+        }
+        
+        .project-card-banner {
+            height: 100%;
+            width: 60%;
+            object-fit: cover;
+            margin: 0px;
+            margin-right: 1rem;
+        }
+        
+        #projects-filter-bar {
+            width: 90%;
+            margin: 1rem;
+        }
+        
+        #projects-filter-bar ul {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #projects-filter-bar li {
+            display: inline-block;
+        }
+        
+        #sticky-filter-sidebar {
+            width: 100%;
+        }
+        
+        .featured-project-vid {
+            width: 100%;
+            margin-top: 1rem;
+    }
+}
+
+/* General smartphone styles */
+@media screen and (max-width: 45rem) {
+
+    nav a {
+        margin: 0rem auto;
+    }
+
+    h1 {
+        font-size: 3rem;
     }
 }

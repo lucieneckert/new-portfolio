@@ -19,7 +19,7 @@
         <div class='sideways-flex'>
             <article class='index-desc'>
                 <div class='sideways-flex'>
-                    <img class='self-picture' src="public/images/self.jpg" alt="selfie, with cat" >
+                    <img class='self-picture' src="public/images/self.jpg" alt="selfie, with cat">
                     <p>
                         <em class="bold-paragraph-title">
                             Hi! I'm Lucien, a fourth-year student studying at the College of
@@ -32,26 +32,23 @@
                         in May 2023 through <a href="https://infosci.cornell.edu/undergraduate/early-admit-mps">Cornell's early admit program.</a>
                         In my free time, I work to develop games either solo or with a few friends.
                         Welcome to my portfolio!
-                        <br>
-                        <br>
-                        <span style="font-weight: bold;"> <img src="public/images/icons/rightarrow.png" alt=""> Click the buttons below to:</span>
                     </p>
                 </div>
-                <section id='quick-links'>
-                    <div class='sideways-flex'>
-                        <a href="/projects" class='projects-button'>
-                            <span>👀 Check out some projects I've worked on</span>
-                        </a>
-                        <a href="/jb-browser-ver" class='projects-button' target="_blank">
-                            <span>🎮 Quickly play a game I made </span>
-                        </a>
-                        <a href="https://twitter.com/sprodsoft" class='projects-button' target="_blank">
-                            <span>🐟 See what I'm currenly working on at SPRODSOFT</span>
-                        </a>
-                    </div>
-                </section>
             </article>
-            <div>
+            <div class='other-elements'>
+                <section>
+                    <ul class='link-list'>
+                        <a href="https://github.com/lucieneckert">
+                            <li><img class="link-icon" src="public/images/icons/github.svg" alt="GitHub"></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lucien-eckert/">
+                            <li><img class="link-icon" src="public/images/icons/linkedin.svg" alt="LinkedIn"></li>
+                        </a>
+                        <a href="mailto:lee48@cornell.edu">
+                            <li><img class="link-icon" src="public/images/icons/mail.svg" alt="e-mail"></li>
+                        </a>
+                    </ul>
+                </section>
                 <section class='box-card resume'>
                     <span class='resume-exclamation left-exclamation'>whoa!</span>
                     <span class='resume-exclamation right-exclamation'>wow!</span>
@@ -60,22 +57,48 @@
                         <img src="public/images/icons/pdf.png" alt=""><span>View "<em>The Resume</em>"!</span>
                     </a>
                 </section>
-                <section class='box-card'>
-                    <h2>Links</h2>
-                    <ul class='link-list'>
-                        <a href="https://github.com/lucieneckert">
-                            <li><img class="link-icon" src="public/images/icons/github.svg" alt=""><span>GitHub</span></li>
-                        </a>
-                        <a href="https://www.linkedin.com/in/lucien-eckert/">
-                            <li><img class="link-icon" src="public/images/icons/linkedin.svg" alt=""><span>Linkedin</span></li>
-                        </a>
-                        <a href="mailto:lee48@cornell.edu">
-                            <li><img class="link-icon" src="public/images/icons/mail.svg" alt=""><span>lee48@cornell.edu</span></li>
-                        </a>
-                    </ul>
-                </section>
             </div>
         </div>
+        <section id='quick-links'>
+            <h2 style="padding-left: 2rem;">🎨 Featured Game Design Projects:</h2>
+            <div class='sideways-flex' id='index-projects'>
+                <a href="view?project=sk" class="project-card box-card project-games">
+                    <img class="project-card-banner" src="public/images/project-thumbs/sprodkart.png" alt="">
+                    <p class="in-progress">⌛ In Progress</p>
+                    <div>
+                        <h3>SPRODKART</h3>
+                        <p>Current Independent Team Project</p>
+                        <ul class="tools-list">
+                            <li> Unity Engine </li>
+                            <li> Blender </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="view?project=rr" class="project-card box-card project-games">
+                    <img class="project-card-banner" src="public/images/project-thumbs/ragdoll.png" alt="">
+                    <div>
+                        <h3>Ragdoll Royale</h3>
+                        <p>Capstone Team Project</p>
+                        <ul class="tools-list">
+                            <li> C++ </li>
+                            <li> Ableton </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="view?project=jb" class="project-card box-card project-games">
+                    <img class="project-card-banner" src="public/images/project-thumbs/juiceboxes.png" alt="">
+                    <div>
+                        <h3>A Small Game About Juiceboxes</h3>
+                        <p>Completed Solo-Dev Game</p>
+                        <ul class="tools-list">
+                            <li> Godot Engine </li>
+                            <li> LMMS </li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <h3 style="text-align: center;">Interested in something else? <a href="/projects" class='projects-button'>🌌 View all projects</a></h3>
     </section>
 </body>
 

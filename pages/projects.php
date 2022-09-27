@@ -32,7 +32,7 @@ $tools = exec_query($db, $tools_query)->fetchAll();
                         <ul>
                             <li class="filter-button" id='filter-all' onclick="filterProjects('all')" style="border: 2px solid grey">🌟 <br> All</li>
                             <li class="filter-button" id='filter-games' onclick="filterProjects('games')">🎲 <br> Games</li>
-                            <li class="filter-button" id='filter-coding' onclick="filterProjects('coding')">🐛 <br> Coding</li>
+                            <li class="filter-button" id='filter-coding' onclick="filterProjects('coding')">🐛 <br> Misc. Coding</li>
                             <li class="filter-button" id='filter-music' onclick="filterProjects('music')">🎼 <br> Music</li>
                             <li class="filter-button" id='filter-web' onclick="filterProjects('web')">🖥️ <br> Web</li>
                         </ul>
@@ -59,7 +59,7 @@ $tools = exec_query($db, $tools_query)->fetchAll();
                         <video src="public/project-info-res/jb/jb-trailer.mp4" controls class="featured-project-vid"></video>
                     </div>
                 </div>
-                <div class='spacious-flex'>
+                <div class='project-cards'>
                     <?php foreach ($projects as $project) {
                     ?>
                         <a href="view?project=<?php echo $project['page_url'] ?>" class='project-card box-card project-<?php echo $project['type'] ?>'>
