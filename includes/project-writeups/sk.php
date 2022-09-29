@@ -12,21 +12,23 @@
     🚧 This page is currently under construction!
 </p>
 
-<p>SPRODKART (Clearly a working title) is an open-ended party racing game (emphasis on local, 4-player couch competitive play) that focuses on balancing upgrading vehicles and
+<p>SPRODKART (clearly a working title) is an open-ended party racing game (emphasis on local, 4-player couch competitive play) that focuses on providing
+    scrappy strategies and chaotic progression.
+    Players must balance upgrading vehicles and
     disturbing opponents in preparation for a final race. Most of the game takes places in a large map with many distinct regions;
-    each with certain quirks such as a propensity for certain vehicles to spawn, stat powerup distributions, and more. Within a ten-minute timeframe,
-    players need to strategize and hone their navigational skill to survive the specific events, conditions, and race course of each unique match.
+    each with certain quirks such as a propensity for certain vehicles to spawn or varying stat powerup drop distributions, for example. Within a ten-minute timeframe,
+    players need to put together a vehicle build, counter the strategies and builds of others, and hone their navigational skills to survive the specific events, conditions, and final race of each unique match.
 </p>
 
-<p>Within this project, I'm responsible for 3D modeling, texture work, and both gameplay and UI programming. Some specific features I've worked on so far include the gamemode logic,
-    vehicle abilities, entity spawning behavior, player HUD (we love the observer pattern), and dismounted player movement. I'm also starting to maintain the Twitter account. 
+<p>Within this project, each member of our small team works on a wide variety of tasks and features. Personally, I've mainly worked on gameplay and UI programming, 3D modeling, texture work, and misc. organizational and administrative tasks. Some specific features I've worked on so far include the gamemode logic,
+    vehicle abilities, entity spawning behavior, player HUD (we love the observer pattern), and dismounted player movement. I'm also starting to maintain the Twitter account.
 </p>
 
 <img src="public/project-info-res/sk/city.png" alt="early screenshot of the main city region, with a forest and caves visible in the background" class='project-img' />
 
 <h2>Gameplay</h2>
 
-The main gamemode of SPROKART consists of two phases, a Prep phase and a Race phase.
+The main gamemode of SPRODKART consists of two phases, a Prep phase and a Race phase.
 
 <h3>Prep Phase</h3>
 
@@ -49,15 +51,15 @@ The main gamemode of SPROKART consists of two phases, a Prep phase and a Race ph
 <h3>Race Phase</h3>
 
 <p>During the race phase, players are teleported to a start line and race between randomly-distributed checkpoints around the open map, competing for points
-    based on their placement. Our design goal is to have the player that wins (places first overall) in the race phase win the
-    entire match 70% of the time.
+    based on their placement. Our design goal is to make this phase important, but not the single determining factor of the match's results. We're aiming to have the player that wins (places first overall) in the race phase win the
+    entire match 70% of the time, and will specifically study this metric in our technical prototypes.
 </p>
 
 <img src="public/project-info-res/sk/cave.png" alt="screenshot of the cave region" class='project-img'>
 
 <h2>Vehicles</h2>
 
-<p>One major theme of SPRODKART is an emphasis on unique and visually striking ("sometimes deranged") vehicles that each offer
+<p>One major theme of SPRODKART is an emphasis on unique and visually striking ("somewhat deranged" shows up in our design document a lot) vehicles that each offer
     different base stats, abilities, and even control schemes. Each is likely to change a lot over the course of development,
     but some early forms are as follows:
 </p>

@@ -70,6 +70,7 @@
                         <p>Current Independent Team Project</p>
                         <ul class="tools-list">
                             <li> Unity Engine </li>
+                            <li> C# </li>
                             <li> Blender </li>
                         </ul>
                     </div>
