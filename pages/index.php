@@ -15,7 +15,9 @@
         <?php include('includes/navbar.php') ?>
     </header>
     <section class='main'>
-        <h1>Welcome! <span class='version-subtitle'>v4.0</span></h1>
+        <h1>Welcome! <span class='version-subtitle'>v4.0</span>
+        </h1>
+        <?php include('./includes/cat-pet.php') ?>
         <div class='sideways-flex'>
             <article class='index-desc'>
                 <div class='sideways-flex'>
