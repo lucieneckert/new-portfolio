@@ -60,7 +60,7 @@
             </div>
         </div>
         <section id='quick-links'>
-            <h2 style="padding-left: 2rem;">🎨 Featured Game Design Projects:</h2>
+            <h2>🎨 Featured Game Development Projects:</h2>
             <div class='sideways-flex' id='index-projects'>
                 <a href="view?project=sk" class="project-card box-card project-games">
                     <img class="project-card-banner" src="public/images/project-thumbs/sprodkart.png" alt="">

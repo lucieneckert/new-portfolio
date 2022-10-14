@@ -9,6 +9,7 @@ if (preg_match('/^\/public\//', $request)) {
 
 $request = explode('?', $request)[0];
 
+
 switch ($request) {
     case '/':
         require 'pages/index.php';

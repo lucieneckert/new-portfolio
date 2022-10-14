@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Raleway:ital,wght@1,800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
 
 @font-face {
     font-family: blockyFont;
@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 5em;
     margin: 10px 0px;
     /* background-color: black; */
