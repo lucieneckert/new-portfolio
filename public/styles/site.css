@@ -8,8 +8,9 @@
 
 
 html {
-    background: #6600FF url('/public/images/blurry-gradient-haikei.svg') no-repeat center center fixed;
-    image-rendering: crisp-edges;
+    background: #EEEEEE url('/public/images/peng-bg.png') no-repeat center center fixed;
+    transition: 0.25s background;
+    /* background-color: #EEEEEE; */
     background-size: cover;
     font-family: 'Atkinson Hyperlegible', sans-serif;
 }
@@ -17,7 +18,7 @@ html {
 /* "window" design */
 body {
     max-width: 1100px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     padding-bottom: 20px;
     margin: 20px auto;
     margin-bottom: 40px;
@@ -30,7 +31,7 @@ body {
 }
 
 h1 {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 5em;
     margin: 10px 0px;
     /* background-color: black; */
@@ -81,7 +82,7 @@ nav li:active {
 
 nav .highlighted {
     border: 2px solid black;
-    background-color: lightgray;
+    background-color: #ff6666;
 }
 
 nav li span {
@@ -142,6 +143,10 @@ nav a {
     display: flex;
 }
 
+.sideways-flex section {
+    padding: 20px;
+}
+
 .vertical-flex {
     display: flex;
     flex-direction: column;
@@ -163,6 +168,7 @@ nav a {
     list-style: "";
     display: flex;
     margin-left: -30px;
+    flex-wrap: wrap;
 }
 
 .link-list li {
@@ -205,7 +211,7 @@ nav a {
 /* "cards" i guess */
 
 .box-card {
-    filter: drop-shadow(10px 10px 0px black);
+    filter: drop-shadow(10px 10px 0px #2b2b2b);
     border: 2px solid black;
     background-color: white;
     padding: 10px 20px;
@@ -227,38 +233,34 @@ nav a {
     transition: 0.1s;
 }
 
-.projects-button:hover {
+.projects-button:hover, .projects-button:focus {
     transform: scale(1.05);
 }
 
-.resume {
-    min-width: 300px;
-    position: relative;
-}
-
-.resume .bold-download-link span {
-    display: inline-block;
-    margin-top: -50px;
-    text-decoration: underline;
+#personal-info {
+    flex-grow: 1;
+    min-width: 35%;
 }
 
 .resume-icon {
-    margin: 10px auto;
-    width: 50%;
+    margin: 0px;
+    margin-right: 1rem;
+    width: 2rem;
+    line-height: 0rem;
 }
 
 .bold-download-link {
-    display: inline-block;
     color: black;
     font-size: 1.5em;
     font-weight: bold;
+    flex-grow: 1;
 }
 
 .resume-exclamation {
     position: absolute;
     font-weight: bold;
     color: #CCCCCC;
-    font-size: 1.5em;
+    font-size: 1.35em;
     user-select: none;
     z-index: -1;
 }
@@ -474,11 +476,11 @@ nav a {
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
 }
 
-.project-card:hover {
+.project-card:hover, .project-card:focus {
     background-color: white !important;
     cursor: pointer;
     color: black;
-    transform: translate(0rem, -0.5rem);
+    transform: translate(0rem, -0.25rem);
 }
 
 /* Section for project writeup includes */
@@ -631,8 +633,10 @@ blockquote {
 }
 
 .self-picture {
-    height: 200px;
+    margin: auto;
+    width: 85%;
     padding: 20px;
+    border-radius: 50%;
 }
 
 /* tablet */
@@ -640,7 +644,7 @@ blockquote {
 @media (max-width: 1000px) {
 
     .self-picture {
-        display: none;
+        margin: 0rem auto;
     }
 
     .project-info-gallery figure img {
@@ -729,8 +733,10 @@ blockquote {
 /* General smartphone styles */
 @media screen and (max-width: 45rem) {
 
-    nav a {
-        margin: 0rem auto;
+    body {
+        margin: 0rem;
+        border-radius: 0rem;
+        border: none;
     }
 
     h1 {

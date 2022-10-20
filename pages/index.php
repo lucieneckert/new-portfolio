@@ -10,56 +10,48 @@
 </head>
 
 <body>
+    <?php include('includes/topbar.php') ?>
     <header>
         <?php include('includes/navbar.php') ?>
     </header>
     <section class='main'>
-        <h1>Welcome! <span class='version-subtitle'>v4.0</span>
-        </h1>
-        <?php include('./includes/cat-pet.php') ?>
-        <div class='sideways-flex'>
+        <!-- <?php include('./includes/cat-pet.php') ?> -->
             <article class='index-desc'>
                 <div class='sideways-flex'>
-                    <img class='self-picture' src="public/images/self.jpg" alt="selfie, with cat">
-                    <p>
-                        <em class="bold-paragraph-title">
-                            Hi! I'm Lucien, a fourth-year student studying at the College of
-                            Arts and Sciences at Cornell
-                            University. <br>
-                        </em>
-                        <br>
-                        I'm currently pursuing a bachelor's degree in <a href="https://infosci.cornell.edu/undergraduate/info-sci-majors/ba-information-science-college-arts-sciences" target="_blank">Information
-                            Science</a> with a minor in Game Design, graduating in December 2022. I'm also on track to graduate with an MPS degree
-                        in May 2023 through <a href="https://infosci.cornell.edu/undergraduate/early-admit-mps">Cornell's early admit program.</a>
-                        In my free time, I work to develop games either solo or with a few friends.
-                        Welcome to my portfolio!
-                    </p>
+                <section id='personal-info'>
+                    <img class='self-picture' src="public/images/gitpfp.bmp" alt="selfie, with cat">
+                </section>
+                <section>
+                        <p>
+                            <em class="bold-paragraph-title">
+                                <span style="font-size: 2em;">Hi! I'm Lucien. 🍻</span> <br> Fourth-year student studying at the College of
+                                Arts & Sciences at Cornell
+                                University. <br>
+                            </em>
+                            <br>
+                            I'm currently pursuing a bachelor's degree in <a href="https://infosci.cornell.edu/undergraduate/info-sci-majors/ba-information-science-college-arts-sciences" target="_blank">Information
+                                Science</a> with a minor in Game Design, graduating in December 2022. I'm also on track to graduate with an MPS degree
+                            in May 2023 through <a href="https://infosci.cornell.edu/undergraduate/early-admit-mps">Cornell's early admit program.</a>
+                            In my free time, I work to develop games either solo or with a few friends.
+                            Welcome to my portfolio!
+                        </p>
+                        <ul class='link-list'>
+                            <a href='public/documents/resume.pdf' style="flex-grow: 1">
+                                <li class='bold-download-link'><img src="public/images/icons/pdf.png" alt="" class='resume-icon'>Resume</li>
+                            </a>
+                            <a href="https://github.com/lucieneckert">
+                                <li><img class="link-icon" src="public/images/icons/github.svg" alt="GitHub"></li>
+                            </a>
+                            <a href="https://www.linkedin.com/in/lucien-eckert/">
+                                <li><img class="link-icon" src="public/images/icons/linkedin.svg" alt="LinkedIn"></li>
+                            </a>
+                            <a href="mailto:lee48@cornell.edu">
+                                <li><img class="link-icon" src="public/images/icons/mail.svg" alt="e-mail"></li>
+                            </a>
+                        </ul>
+                </section>
                 </div>
             </article>
-            <div class='other-elements'>
-                <section>
-                    <ul class='link-list'>
-                        <a href="https://github.com/lucieneckert">
-                            <li><img class="link-icon" src="public/images/icons/github.svg" alt="GitHub"></li>
-                        </a>
-                        <a href="https://www.linkedin.com/in/lucien-eckert/">
-                            <li><img class="link-icon" src="public/images/icons/linkedin.svg" alt="LinkedIn"></li>
-                        </a>
-                        <a href="mailto:lee48@cornell.edu">
-                            <li><img class="link-icon" src="public/images/icons/mail.svg" alt="e-mail"></li>
-                        </a>
-                    </ul>
-                </section>
-                <section class='box-card resume'>
-                    <span class='resume-exclamation left-exclamation'>whoa!</span>
-                    <span class='resume-exclamation right-exclamation'>wow!</span>
-                    <img src="public/images/icons/limited.png" alt="Limited edition!" class='limited-edition'>
-                    <a href='public/documents/resume.pdf' class='bold-download-link'>
-                        <img src="public/images/icons/pdf.png" alt=""><span>View "<em>The Resume</em>"!</span>
-                    </a>
-                </section>
-            </div>
-        </div>
         <section id='quick-links'>
             <h2>🎨 Featured Game Development Projects:</h2>
             <div class='sideways-flex' id='index-projects'>
