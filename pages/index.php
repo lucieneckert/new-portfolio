@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <?php include('includes/topbar.php') ?>
     <header>
         <?php include('includes/navbar.php') ?>
     </header>

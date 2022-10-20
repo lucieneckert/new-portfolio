@@ -3,7 +3,7 @@
 ?>
 
 <nav class='sideways-flex'>
-    <a href="/"><img id='logo-img' src="public/images/cat2.jpg" alt=""></a>
+    <!-- <a href="/"><img id='logo-img' src="public/images/cat2.jpg" alt=""></a> -->
     <ul>
         <a id='index' href="/"><li class='<?php if ($_SERVER['REQUEST_URI'] == "/") echo "highlighted" ?>'>
         📇 index
