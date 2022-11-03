@@ -26,6 +26,9 @@ switch ($request) {
     case '/jb-browser-ver':
         require 'pages/jb-browser/jb-browser-ver.html';
         break;
+    case '/gaming4999':
+        require 'pages/gaming4999.php';
+        break;
     default:
         http_response_code(404);
         require 'pages/404.php';
