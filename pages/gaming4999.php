@@ -73,15 +73,18 @@ if (is_user_logged_in()) {
 $challenges = [
     "0" => [
         "name" => "⭐ / gone",
-        "img_path" => "/public/gaming/gone.png"
+        "img_path" => "/public/gaming/gone.png",
+        "location" => "n/a"
     ],
     "1" => [
         "name" => "⭐⭐ / dir",
-        "img_path" => "/public/gaming/bb.png"
+        "img_path" => "/public/gaming/bb.png",
+        "location" => "North Campus"
     ],
     "2" => [
         "name" => "⭐⭐ / between",
-        "img_path" => "/public/gaming/between.png"
+        "img_path" => "/public/gaming/between.png",
+        "location" => "Eng. Quad"
     ]
 ]
 
@@ -171,6 +174,7 @@ $challenges = [
                     <div class='col'>
                         <div class='card challenge <?php if (in_array($chal_id, $chals_solved)) echo "completed" ?>'>
                             <p class="card-header"><?php echo $chal_data['name'] ?></p>
+                            <p>> Location: <?php echo $chal_data['location']?></p>
                             <div class='card-body' style="max-height: 80%;">
                                 <img class='chal-pic' src=<?php echo $chal_data['img_path'] ?> alt="">
                             </div>
