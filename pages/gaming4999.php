@@ -122,15 +122,7 @@ $challenges = [
 </header>
 
 <body>
-    <section id="syllabus" class="container">
-        <h2>Syllabus</h2>
-        <p>GAMING 4999 is a real course, with real consequences.* Build up your <span style="font-weight: bold;">GPA</span> (goodboy point accumulation) through collecting stars.
-            One exam will be dropped. Course material and syllabus content will vary wildly over the upcoming weeks. Only one winner will be crowned. Prove
-            your worth.  <br>
-            *<em>This course is real.</em><br>
-            **<em>This course fulfills the LGMA-DN-IYM requirement for completion of a Minor in Being Very Cool.</em> 
-        </p>
-    </section>
+    
     <? // if not logged in 
     if (!$logged_in) {
     ?>
@@ -159,6 +151,18 @@ $challenges = [
     } else {
         // if logged in 
     ?>
+        <div class='container' style="background: linear-gradient(#330066, #000066); color: white; padding: 2rem; border-radius: 1rem">
+            <div class="row">
+                <div class='col'>
+                    <h2>Exam 1</h2>
+                    <h3 style="font-family: monospace;">10⭐ // night</h3>
+                    <p>Loc: Duffield</p>
+                </div>
+                <div class='col'>
+                    <p id='countdown' style="font-size: 5rem;">00:00:00</p>
+                </div>
+            </div>
+        </div>
         <div class='container'>
             <h2>Week 1 Assignments</h2>
             <p>GLHF it's that easy</p>
@@ -167,7 +171,7 @@ $challenges = [
                     <div class='col'>
                         <div class='card challenge <?php if (in_array($chal_id, $chals_solved)) echo "completed" ?>'>
                             <p class="card-header"><?php echo $chal_data['name'] ?></p>
-                            <div class='card-body'>
+                            <div class='card-body' style="max-height: 80%;">
                                 <img class='chal-pic' src=<?php echo $chal_data['img_path'] ?> alt="">
                             </div>
                             <?php if (in_array($chal_id, $chals_solved)) echo "// completed";
@@ -201,6 +205,31 @@ $challenges = [
                 </ul>
             </div>
         </div>
+        <section id="syllabus" class="container">
+        <h2>Syllabus</h2>
+        <p>GAMING 4999 is a real course, with real consequences.* Build up your <span style="font-weight: bold;">GPA</span> (goodboy point accumulation) through collecting stars.
+            One exam will be dropped. Course material and syllabus content will vary wildly over the upcoming weeks. Only one winner will be crowned. Prove
+            your worth.  <br>
+            *<em>This course is real.</em><br>
+            **<em>This course fulfills the LGMA-DN-IYM requirement for completion of a Minor in Being Very Cool.</em> 
+        </p>
+    </section>
+    <script>
+        const updateCountdown = () => {
+            const countdown = document.getElementById("countdown");
+            const target = new Date(2022,11,5,7).getTime();
+            const now = new Date().getTime();
+            console.log(target)
+            console.log(now)
+            const diff = Math.floor((target - now)); // ms
+            const seconds = Math.floor((diff / (1000)));
+            const mins =  Math.floor(seconds / 60) % 60;
+            const hours = Math.floor(seconds / (60 * 60)) % 12;
+            countdown.innerHTML = `${hours}:${mins}:${seconds % 60}`
+            setTimeout(updateCountdown, 1000);
+        }
+        updateCountdown();
+    </script>
     <? } ?>
 </body>
 
