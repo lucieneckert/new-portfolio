@@ -26,16 +26,21 @@ if (isset($_POST['enroll'])) {
 }
 
 
+$is_treasure_found = sizeof(exec_query($db, "SELECT * from user_challenges WHERE challenge_id = 3")->fetchAll()) > 0;
+
 // get all users 
 $users = exec_query($db, "SELECT * from users ORDER BY stars DESC")->fetchAll();
 // get all challenge data
 $chals = exec_query($db, "SELECT * from challenges")->fetchAll();
 
-$chal_post_ids = ['0', '1', '2'];
+$chal_post_ids = ['0', '1', '2', '3'];
 $chal_solutions = [
     '0' => 'cow',
     '1' => 'enws',
     '2' => 'm',
+    '3' => 'treasure',
+    '4' => 'extra-terrestrials',
+    '5' => 'sbr'
 ];
 
 $logged_in = false;
@@ -61,6 +66,9 @@ if (is_user_logged_in()) {
             $user_score = $user_score + $chals[$chal_id]['stars'];
             // update the database
             exec_query_params($db, "INSERT INTO user_challenges (user_id, challenge_id) VALUES (:user_id, :challenge_id)", [":user_id" => $user_id, ":challenge_id" => $chal_id]);
+            if ($chal_id == 3) {
+                $is_treasure_found = true;
+            }
         }
     }
     // if score changed, update
@@ -85,6 +93,16 @@ $challenges = [
         "name" => "⭐⭐ / between",
         "img_path" => "/public/gaming/between.png",
         "location" => "Eng. Quad"
+    ],
+    '4' => [
+        "name" => "⭐⭐⭐ / lib",
+        "img_path" => "/public/gaming/lib.png",
+        "location" => "Arts Quad"
+    ],
+    "5" => [
+        "name" => "⭐⭐⭐ / grafitti",
+        "img_path" => "/public/gaming/grafitti.png",
+        "location" => "Collegetown"
     ]
 ]
 
@@ -103,7 +121,7 @@ $challenges = [
 <header class='container'>
     <div class='row'>
         <div class='col-10' style="margin: 0rem auto;">
-            <div class='hero-icon'>🔎🌄🕕</div>
+            <div class='hero-icon'>🔎🌉💀</div>
             <h1 style="text-align: center;">GAMING 4999</h1>
         </div>
         <div class='col' style="text-align: right; max-width: 10rem; margin: 1rem auto;">
@@ -125,7 +143,7 @@ $challenges = [
 </header>
 
 <body>
-    
+
     <? // if not logged in 
     if (!$logged_in) {
     ?>
@@ -154,34 +172,52 @@ $challenges = [
     } else {
         // if logged in 
     ?>
-        <div class='container' style="background: linear-gradient(#330066, #000066); color: white; padding: 2rem; border-radius: 1rem">
-            <div class="row">
-                <div class='col'>
-                    <h2>Exam 1</h2>
-                    <h3 style="font-family: monospace;">10⭐ // night</h3>
-                    <p>Loc: Duffield</p>
-                </div>
-                <div class='col'>
-                    <p id='countdown' style="font-size: 5rem;">00:00:00</p>
-                </div>
-            </div>
+        <?
+        // <div class='container' style="background: linear-gradient(#330066, #000066); color: white; padding: 2rem; border-radius: 1rem">
+        //     <div class="row">
+        //         <div class='col'>
+        //             <h2>Exam 1</h2>
+        //             <h3 style="font-family: monospace;">10⭐ // night</h3>
+        //             <p>Loc: Duffield</p>
+        //         </div>
+        //     </div>
+        // <div class="row">
+        //     <div style="display: flex; max-height: 20rem; width: 100%; justify-content: space-evenly">
+        //         <img src="/public/gaming/night2.jpg" alt="" style="max-width: 30%;">
+        //         <img src="/public/gaming/night3.jpg" alt="" style="max-width: 30%;">
+        //         <img src="/public/gaming/night1.jpg" alt="" style="max-width: 30%;">
+        //     </div>
+        // </div>
+        // <div class='row' style="padding-top: 2rem;">
+        //     <!-- <p id='countdown' style="font-size: 5rem;">00:00:00</p> -->
+        //     <form action="/gaming4999" method="post">
+        //         <input type="text" placeholder="solution... (8 chars)" name="3">
+        //         <input type="submit" class='btn btn-dark submit' value="Submit" />
+        //     </form>
+        // </div>
+        ?>
         </div>
         <div class='container'>
-            <h2>Week 1 Assignments</h2>
+            <?php if ($current_user['cursed']) { ?>
+                <div class='curse-info'>
+                    <h2>💀 The curse is festering. </h2>
+                </div>
+            <?php } ?>
+            <h2>Assignments</h2>
             <p>GLHF it's that easy</p>
             <div class='row'>
                 <?php foreach ($challenges as $chal_id => $chal_data) { ?>
                     <div class='col'>
                         <div class='card challenge <?php if (in_array($chal_id, $chals_solved)) echo "completed" ?>'>
                             <p class="card-header"><?php echo $chal_data['name'] ?></p>
-                            <p>> Location: <?php echo $chal_data['location']?></p>
+                            <p>> Location: <?php echo $chal_data['location'] ?></p>
                             <div class='card-body' style="max-height: 80%;">
                                 <img class='chal-pic' src=<?php echo $chal_data['img_path'] ?> alt="">
                             </div>
                             <?php if (in_array($chal_id, $chals_solved)) echo "// completed";
                             else { ?>
                                 <form method="post" action="/gaming4999" style="display: flex; width: 100%">
-                                    <input type="text" placeholder="solution..." name=<?php echo $chal_id ?>>
+                                    <input type="text" placeholder="solution..(<?php echo htmlspecialchars(strlen($chal_solutions[$chal_id])) ?> chars)" name=<?php echo $chal_id ?>>
                                     <input type="submit" class='btn btn-dark submit' value="Submit" />
                                 </form>
                             <? } ?>
@@ -200,6 +236,9 @@ $challenges = [
                         <li class='list-group-item'>
                             <div style="display: flex; justify-content: space-between">
                                 <p><? echo htmlspecialchars($user_data['username']) ?></p>
+                                <p><? if ($user_data['cursed']) {
+                                        echo "Cursed 💀";
+                                    } ?> </p>
                                 <p>⭐<? echo $user_name != $user_data['username'] ? $user_data['stars'] : $user_score ?></p>
                             </div>
                         </li>
@@ -210,30 +249,30 @@ $challenges = [
             </div>
         </div>
         <section id="syllabus" class="container">
-        <h2>Syllabus</h2>
-        <p>GAMING 4999 is a real course, with real consequences.* Build up your <span style="font-weight: bold;">GPA</span> (goodboy point accumulation) through collecting stars.
-            One exam will be dropped. Course material and syllabus content will vary wildly over the upcoming weeks. Only one winner will be crowned. Prove
-            your worth.  <br>
-            *<em>This course is real.</em><br>
-            **<em>This course fulfills the LGMA-DN-IYM requirement for completion of a Minor in Being Very Cool.</em> 
-        </p>
-    </section>
-    <script>
-        const updateCountdown = () => {
-            const countdown = document.getElementById("countdown");
-            const target = new Date(2022,11,5,7).getTime();
-            const now = new Date().getTime();
-            console.log(target)
-            console.log(now)
-            const diff = Math.floor((target - now)); // ms
-            const seconds = Math.floor((diff / (1000)));
-            const mins =  Math.floor(seconds / 60) % 60;
-            const hours = Math.floor(seconds / (60 * 60)) % 12;
-            countdown.innerHTML = `${hours}:${mins}:${seconds % 60}`
-            setTimeout(updateCountdown, 1000);
-        }
-        updateCountdown();
-    </script>
+            <h2>Syllabus</h2>
+            <p>GAMING 4999 is a real course, with real consequences.* Build up your <span style="font-weight: bold;">GPA</span> (goodboy point accumulation) through collecting stars.
+                One exam will be dropped. Course material and syllabus content will vary wildly over the upcoming weeks. Only one winner will be crowned. Prove
+                your worth. <br>
+                *<em>This course is real.</em><br>
+                **<em>This course fulfills the LGMA-DN-IYM requirement for completion of a Minor in Being Very Cool.</em>
+            </p>
+        </section>
+        <script>
+            // const updateCountdown = () => {
+            //     const countdown = document.getElementById("countdown");
+            //     const target = new Date(2022, 11, 5, 7).getTime();
+            //     const now = new Date().getTime();
+            //     console.log(target)
+            //     console.log(now)
+            //     const diff = Math.floor((target - now)); // ms
+            //     const seconds = Math.floor((diff / (1000)));
+            //     const mins = Math.floor(seconds / 60) % 60;
+            //     const hours = Math.floor(seconds / (60 * 60)) % 12;
+            //     countdown.innerHTML = `${hours}:${mins}:${seconds % 60}`
+            //     setTimeout(updateCountdown, 1000);
+            // }
+            // updateCountdown();
+        </script>
     <? } ?>
 </body>
 
