@@ -1,4 +1,4 @@
-<?php 
+<?php
 include_once('includes/db.php');
 $proj_url_id = $_GET['project'];
 $project = exec_query_params($db, "SELECT * FROM projects WHERE (page_url = :proj_url_id);", array(":proj_url_id" => $proj_url_id))->fetch();
@@ -16,15 +16,12 @@ $project = exec_query_params($db, "SELECT * FROM projects WHERE (page_url = :pro
 </head>
 
 <body>
-    <?php include('includes/topbar.php') ?>
-    <header>
-        <?php include('includes/navbar.php') ?>
-    </header>
+    <?php include('includes/header.php') ?>
     <section class='main'>
 
-    <p><a href="/projects">Projects</a> > <a href=""><?php echo $project['name'] ?></a></p>
+        <p><a href="/projects">Projects</a> > <a href=""><?php echo $project['name'] ?></a></p>
 
-    <?php include ('includes/project-writeups/' . $_GET['project'] . '.php'); ?>
+        <?php include('includes/project-writeups/' . $_GET['project'] . '.php'); ?>
 
     </section>
 

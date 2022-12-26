@@ -10,10 +10,7 @@
 </head>
 
 <body>
-    <?php include('includes/topbar.php') ?>
-    <header>
-        <?php include('includes/navbar.php') ?>
-    </header>
+    <?php include('includes/header.php') ?>
     <section class='main'>
         <h1>Error 404</h1>
         <h2>Page not found.</h2>

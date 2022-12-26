@@ -19,10 +19,7 @@ $tools = exec_query($db, $tools_query)->fetchAll();
 </head>
 
 <body>
-    <?php include('includes/topbar.php') ?>
-    <header>
-        <?php include('includes/navbar.php') ?>
-    </header>
+    <?php include('includes/header.php') ?>
     <section class='main'>
         <h1>Projects</h1>
         <div class='sideways-flex'>
@@ -37,7 +34,7 @@ $tools = exec_query($db, $tools_query)->fetchAll();
                             <li class="filter-button" id='filter-web' onclick="filterProjects('web')">🖥️ <br> Web</li>
                         </ul>
                     </div>
-                    <img src="public/images/icons/rightarrow.png" class="filter-indicator" />
+                    <img src="public/images/icons/rightarrow.png" class="filter-indicator" alt="" />
                 </div>
             </div>
             <div>

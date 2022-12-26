@@ -1,1 +1,0 @@
-<span style="display: block; width: 100%; text-align: center; color: grey; margin-top: 1rem;">// Lucien's Portfolio (V4.2)</span>
