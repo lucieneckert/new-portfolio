@@ -10,7 +10,7 @@ const filterProjects = (categoryID) => {
     for (let i = 0; i < projects.length; i++) {
         const elem = projects[i]
         if (categoryID == "all" || elem.classList.contains(`project-${categoryID}`)) {
-            elem.style = "display: inline-block"
+            elem.style = ""
         } else {
             elem.style = "display: none"
         }

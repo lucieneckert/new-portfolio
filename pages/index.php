@@ -16,24 +16,33 @@
         <article class='index-desc'>
             <div class='sideways-flex'>
                 <section id='personal-info'>
-                    <img class='self-picture' src="public/images/gitpfp.bmp" alt="selfie, with cat">
+                    <img class='self-picture' src="public/images/gitpfp.bmp" alt="stylized picture of my cat Newton">
                 </section>
                 <section>
-                    <p>
-                        <em class="bold-paragraph-title">
-                            <span style="font-size: 2em;">Hi! I'm Lucien. 🍻</span> <br> Graduate student studying at Cornell
-                            University. <br>
-                        </em>
-                        <br>
-                        I'm currently pursuing a bachelor's degree in <a href="https://infosci.cornell.edu/undergraduate/info-sci-majors/ba-information-science-college-arts-sciences" target="_blank">Information
-                            Science</a> with a minor in Game Design, graduating in December 2022. I'm also on track to graduate with an MPS degree
-                        in May 2023 through <a href="https://infosci.cornell.edu/undergraduate/early-admit-mps">Cornell's early admit program.</a>
-                        In my free time, I work to develop games either solo or with a few friends.
+                    <em class="bold-paragraph-title">
+                        <span style="font-size: 2em;">Hi! I'm Lucien. 🍻</span> <br> Graduate student studying at Cornell
+                        University. <br>
+                    </em>
+                    <ul class='bio-list'>
+                        <li>
+                            <span class='icon'>🎓</span>
+                            <span>I graduated from Cornell University with a BA in Information Science, Minor in Game Design. Currently, I'm pursuing an MPS in Information Science at Cornell, graduating May 2023.</span>
+                        </li>
+                        <li>
+                            <span class='icon'>🔎</span>
+                            <span>I'm looking for a software engineering role where I can build accessible frontend systems, collaborate with other developers and UX designers alike, and make the world a better place!</span>
+                        </li>
+                        <li>
+                            <span class='icon'>🎮</span>
+                            <span>I have a passion for making (and playing!) digital games in my free time. I love the interdisciplinary collaboration within game dev projects, and learning more about pixel art, 3D modeling, and music composition. </span>
+                        </li>
+                    </ul>
+                    <em class="bold-paragraph-title">
                         Welcome to my portfolio!
-                    </p>
+                    </em>
                     <ul class='link-list'>
                         <a href='public/documents/resume.pdf' style="flex-grow: 1">
-                            <li class='bold-download-link'><img src="public/images/icons/pdf.png" alt="" class='resume-icon'>Resume</li>
+                            <li class='bold-download-link'><img src="public/images/icons/pdf.png" alt="" class='resume-icon'>Download Resume</li>
                         </a>
                         <a href="https://github.com/lucieneckert">
                             <li><img class="link-icon" src="public/images/icons/github.svg" alt="GitHub"></li>

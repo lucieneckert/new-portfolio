@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Raleway:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 html {
@@ -12,16 +12,29 @@ html {
 /* "window" design */
 body {
     max-width: 1100px;
-    padding: 10px 30px;
+    padding: 1.5rem 2rem;
     padding-bottom: 20px;
     margin: 20px auto;
     margin-bottom: 40px;
     background-color: white;
     border: 1px solid black;
-        /* border-radius: 1rem; */
+    /* border-radius: 1rem; */
     height: fit-content;
-    animation: fade-in 0.5s;
-    }
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    /* font-family: 'Quicksand', sans-serif; */
+    font-size: 5em;
+    margin: 1.5rem 0rem;
+    /* background-color: black; */
+    /* color: white; */
+    border-radius: 2rem;
+    width: fit-content;
+}
 
 @keyframes fade-in {
     from {
@@ -31,17 +44,6 @@ body {
     to {
         opacity: 1;
     }
-}
-
-h1 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 5em;
-    margin: 10px 0px;
-    /* background-color: black; */
-    /* color: white; */
-    padding: 1.25rem;
-    border-radius: 2rem;
-    width: fit-content;
 }
 
 /* nav */
@@ -54,15 +56,15 @@ h1 {
 }
 
 nav {
-    margin: 0.5rem;
+    margin: 0.5rem 0rem;
 }
 
 nav a {
     position: relative;
     display: inline-block;
-    margin: 0rem 0.5rem;
+    margin-right: 0.75rem;
     filter: drop-shadow(5px 5px 0px grey);
-    /* border: 2px solid black; */
+    border: 2px solid black;
         border-radius: 0.5rem;
         padding: 0.75rem 1rem;
         font-size: 1.2rem;
@@ -79,10 +81,11 @@ nav a:active {
 
 nav .highlighted {
     color: white;
-        background-color: slategrey;
+    background-color: slategrey;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
     background-color: whitesmoke;
     color: black;
 }
@@ -105,13 +108,14 @@ nav a {
     nav {
         width: 100%;
     }
-    
+
 
                 nav * {
         width: 100%;
     }
 
 }
+
 /* flex boxes */
 
 .sideways-flex {
@@ -136,17 +140,31 @@ nav a {
         width: 100%;
     }
 }
+
 /* index page elements */
 
+.bio-list {
+    margin-left: -40px;
+}
+
+.bio-list li {
+    display: flex;
+    margin: 0.5rem 0rem;
+}
+
+.bio-list li .icon {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
 
 .link-list {
     list-style: "";
     display: flex;
-    margin-left: -30px;
+    margin-left: -40px;
     flex-wrap: wrap;
 }
 
-.link-list li {
+.link-list a {
     display: inline-block;
     border-radius: 1rem;
     padding: 10px 10px;
@@ -155,26 +173,20 @@ nav a {
     transition: 0.1s;
     border: 2px solid #2b2b2b;
     filter: drop-shadow(5px 5px 0px grey);
+    text-decoration: none;
+        color: black;
 }
 
-.link-list li:hover {
+.link-list a:hover,
+.link-list a:focus {
     background-color: #ebebeb;
     transform: scale(1.05);
-}
-
-.link-list a {
-    text-decoration: none;
-    color: black;
 }
 
 .bold-paragraph-title {
     font-weight: bold;
     font-style: normal;
     font-size: 1.2em;
-}
-
-.link-list li a {
-    color: black;
 }
 
 .link-icon {
@@ -208,7 +220,8 @@ nav a {
     transition: 0.1s;
 }
 
-.projects-button:hover, .projects-button:focus {
+.projects-button:hover,
+.projects-button:focus {
     transform: scale(1.05);
 }
 
@@ -326,6 +339,7 @@ nav a {
 .project-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 1rem;
 }
 
 .featured-project {
@@ -339,7 +353,7 @@ nav a {
 
 .featured-project .projects-button {
     font-size: 1.25em;
-    margin: 0px 10px;
+    margin: 0.25rem 10px;
     color: black;
 }
 
@@ -378,6 +392,7 @@ nav a {
 
 .featured-project-img {
     width: 400px;
+    max-width: 100%;
     border-radius: 1rem;
 }
 
@@ -403,18 +418,17 @@ nav a {
 
 .project-card {
     position: relative;
-    border-radius: 20px;
+    border-radius: 1rem;
     background-color: #ebebeb;
     margin: 10px;
     color: black;
     height: 225px;
-    width: 15rem;
     text-align: left;
     overflow: hidden;
     transition: 0.2s;
     text-decoration: none;
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
         justify-content: flex-start;
 }
 
@@ -451,7 +465,8 @@ nav a {
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
 }
 
-.project-card:hover, .project-card:focus {
+.project-card:hover,
+.project-card:focus {
     background-color: white !important;
     cursor: pointer;
     color: black;
@@ -485,6 +500,7 @@ blockquote {
 
 .project-info-gallery video {
     width: 470px;
+    max-width: 100%;
     flex-grow: 1;
 }
 
@@ -611,7 +627,8 @@ blockquote {
     margin: auto;
     width: 85%;
     padding: 20px;
-    border-radius: 50%;
+    border-radius: 25%;
+        animation: fade-in 0.5s;
 }
 
 /* tablet */
@@ -663,16 +680,15 @@ blockquote {
     }
 
     .project-card {
-        width: 100% !important;
+        width: 95%;
             flex-direction: row;
             padding: 0px;
-            height: 200px !important;
         }
-        
+    
         .filter-indicator {
             display: none;
         }
-        
+    
         .project-card-banner {
             height: 100%;
             width: 60%;
@@ -680,29 +696,32 @@ blockquote {
             margin: 0px;
             margin-right: 1rem;
         }
-        
+    
         #projects-filter-bar {
             width: 90%;
-            margin: 1rem;
+
         }
         
         #projects-filter-bar ul {
             display: flex;
             flex-direction: row;
         }
-        
+    
         #projects-filter-bar li {
             display: inline-block;
         }
-        
+    
         #sticky-filter-sidebar {
             width: 100%;
         }
-        
+    
         .featured-project-vid {
             width: 100%;
             margin-top: 1rem;
     }
+#index-projects a {
+    width: auto;
+}
 }
 
 /* General smartphone styles */
@@ -712,6 +731,7 @@ blockquote {
         margin: 0rem;
         border-radius: 0rem;
         border: none;
+        padding: 0.5rem;
     }
 
     h1 {
