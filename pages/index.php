@@ -26,11 +26,11 @@
                     <ul class='bio-list'>
                         <li>
                             <span class='icon'>🎓</span>
-                            <span>I graduated from Cornell University with a BA in Information Science, Minor in Game Design. Currently, I'm pursuing an MPS in Information Science at Cornell, graduating May 2023.</span>
+                            <span>I finished my undergrad at Cornell University with a BA in <a href="https://infosci.cornell.edu/masters/mps">Information Science</a>, Minor in Game Design. Currently, I'm pursuing an MPS, also in Info Sci at Cornell, graduating May 2023.</span>
                         </li>
                         <li>
                             <span class='icon'>🔎</span>
-                            <span>I'm looking for a software engineering role where I can build accessible frontend systems, collaborate with other developers and UX designers alike, and make the world a better place!</span>
+                            <span>I'm looking for a software engineering role where I can build accessible frontend systems, collaborate with other developers and UX designers alike, and make the world at least a slightly better place!</span>
                         </li>
                         <li>
                             <span class='icon'>🎮</span>
@@ -41,16 +41,16 @@
                         Welcome to my portfolio!
                     </em>
                     <ul class='link-list'>
-                        <a href='public/documents/resume.pdf' style="flex-grow: 1">
+                        <a href='public/documents/resume.pdf' style="flex-grow: 1" target="_blank">
                             <li class='bold-download-link'><img src="public/images/icons/pdf.png" alt="" class='resume-icon'>Download Resume</li>
                         </a>
-                        <a href="https://github.com/lucieneckert">
+                        <a href="https://github.com/lucieneckert" target="_blank">
                             <li><img class="link-icon" src="public/images/icons/github.svg" alt="GitHub"></li>
                         </a>
-                        <a href="https://www.linkedin.com/in/lucien-eckert/">
+                        <a href="https://www.linkedin.com/in/lucien-eckert/" target="_blank">
                             <li><img class="link-icon" src="public/images/icons/linkedin.svg" alt="LinkedIn"></li>
                         </a>
-                        <a href="mailto:lee48@cornell.edu">
+                        <a href="mailto:lee48@cornell.edu" target="_blank">
                             <li><img class="link-icon" src="public/images/icons/mail.svg" alt="e-mail"></li>
                         </a>
                     </ul>
@@ -58,7 +58,7 @@
             </div>
         </article>
         <section id='quick-links'>
-            <h2>🎨 Featured Game Development Projects:</h2>
+            <h2>🎨 Featured Game Development Projects</h2>
             <div class='sideways-flex' id='index-projects'>
                 <a href="view?project=sk" class="project-card box-card project-games">
                     <img class="project-card-banner" src="public/images/project-thumbs/sprodkart.png" alt="">

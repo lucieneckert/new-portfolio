@@ -45,7 +45,7 @@ $tools = exec_query($db, $tools_query)->fetchAll();
                             <img src="public/images/project-thumbs/jb-banner.png" alt="A Small Game About Juiceboxes" class="featured-project-img">
                             <p>My first solo game project made using <a href="https://godotengine.org/">Godot Engine.</a> Developed over three months in quarantine, the focus of this project was to experiment with game "juice" (hence the name) and familiarize myself with the process of developing a game from start to finish.</p>
                             <div>
-                                <a href="/jb-browser-ver" class='projects-button' target="_blank">
+                                <a href="/jb-browser-ver" class='projects-button hide-on-mobile' target="_blank">
                                     <span>🎮 Play in Browser</span>
                                 </a>
                                 <a href="/view?project=jb" class='projects-button'>

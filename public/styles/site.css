@@ -17,8 +17,8 @@ body {
     margin: 20px auto;
     margin-bottom: 40px;
     background-color: white;
-    border: 1px solid black;
-    /* border-radius: 1rem; */
+    border: 2px solid black;
+        border-radius: 1rem;
     height: fit-content;
 }
 
@@ -65,7 +65,7 @@ nav a {
     margin-right: 0.75rem;
     filter: drop-shadow(5px 5px 0px grey);
     border: 2px solid black;
-        border-radius: 0.5rem;
+    border-radius: 0.75rem;
         padding: 0.75rem 1rem;
         font-size: 1.2rem;
     font-weight: bold;
@@ -153,7 +153,7 @@ nav a {
 }
 
 .bio-list li .icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-right: 0.5rem;
 }
 
@@ -425,7 +425,7 @@ nav a {
     height: 225px;
     text-align: left;
     overflow: hidden;
-    transition: 0.2s;
+    transition: 0.1s;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -633,8 +633,14 @@ blockquote {
 
 /* tablet */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
+    body {
+        margin: 0rem;
+        border-radius: 0rem;
+        border: none;
+        padding: 0.5rem;
+    }
     .self-picture {
         margin: 0rem auto;
     }
@@ -727,14 +733,10 @@ blockquote {
 /* General smartphone styles */
 @media screen and (max-width: 45rem) {
 
-    body {
-        margin: 0rem;
-        border-radius: 0rem;
-        border: none;
-        padding: 0.5rem;
-    }
-
     h1 {
         font-size: 3rem;
     }
+.hide-on-mobile {
+    display: none;
+}
 }
