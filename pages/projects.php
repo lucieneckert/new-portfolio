@@ -26,6 +26,7 @@ $tools = exec_query($db, $tools_query)->fetchAll();
             <div id='sticky-filter-sidebar'>
                 <div style="position: sticky; top: 1rem">
                     <div id='projects-filter-bar' class='box-card'>
+                        <p>Filter</p>
                         <ul>
                             <li class="filter-button" id='filter-all' onclick="filterProjects('all')" style="border: 2px solid grey">🌟 <br> All</li>
                             <li class="filter-button" id='filter-games' onclick="filterProjects('games')">🎲 <br> Games</li>

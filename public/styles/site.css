@@ -149,7 +149,7 @@ nav a {
 
 .bio-list li {
     display: flex;
-    margin: 0.5rem 0rem;
+    margin: 1rem 0rem;
 }
 
 .bio-list li .icon {
@@ -624,6 +624,7 @@ blockquote {
 }
 
 .self-picture {
+    display: block;
     margin: auto;
     width: 85%;
     padding: 20px;

@@ -19,6 +19,8 @@
     especially when it came to audio and playtesting.
 </p>
 
+<img class="project-img" src="public/project-info-res/rr/poster.png" alt="poster used during the showcase event to describe our game">
+
 <h2>Gameplay</h2>
 
 <p>
