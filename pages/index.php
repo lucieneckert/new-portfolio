@@ -20,23 +20,24 @@
                 </section>
                 <section>
                     <em class="bold-paragraph-title">
-                        <span style="font-size: 2em;">Hi! I'm Lucien, 🍻</span> <br> Graduate student studying at Cornell
-                        University. <br>
+                        <span style="font-size: 2em;">Hi! I'm Lucien, 🍻</span> 
+                        <!-- <br> Graduate student studying at Cornell University. <br> -->
+                        <br> Software Engineer and Game Dev Hobbyist. <br>
                     </em>
                     <p>A little bit about me -- </p>
                     <ul class='bio-list'>
                         <li>
                             <span class='icon'>🎓</span>
-                            <span>I finished my undergrad at Cornell University with a BA in <a href="https://infosci.cornell.edu/masters/mps" target="_blank">Information Science</a>, Minor in Game Design. Currently, I'm pursuing an MPS, also in Info Sci at Cornell, graduating May 2023.</span>
+                            <span>I finished my undergrad at Cornell University with a BA in <a href="https://infosci.cornell.edu/masters/mps" target="_blank">Information Science</a>, alongside a minor in Game Design. I subsequently finished a Masters of Professional Studies, also in Info Sci at Cornell, in May 2023.</span>
                         </li>
                         <li>
                             <span class='icon'>🎮</span>
                             <span>In my free time, I have a passion for making (and playing!) digital and tabletop games. I love the interdisciplinary collaboration within game dev projects, and learning more about pixel art, 3D modeling, and music composition. </span>
                         </li>
-                        <li>
+                        <!-- <li>
                             <span class='icon'>🔎</span>
                             <span>I'm looking for a software engineering role where I can apply my previous experience building accessible frontend systems, collaborate with others with varied backgrounds and skills, and closely understand the needs of end users!</span>
-                        </li>
+                        </li> -->
                     </ul>
                     <em class="bold-paragraph-title">
                         Welcome to my portfolio! 😊
